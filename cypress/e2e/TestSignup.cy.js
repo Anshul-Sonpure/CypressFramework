@@ -1,12 +1,13 @@
 import SignUp from "../PageClass/SignUp";
 import '../support/commands';
 import { before } from "mocha";
+const startTime = Date.now();
 describe('Validate User is Register',()=>{
 
     beforeEach(() => {
         // Launch the application URL
         cy.visit('https://www.demoblaze.com/');
-        cy.logToExternalFile("Launched Application-->SignUp Test");
+        cy.UILogs("Launched Application-->SignUp Test");
       });
     
    
@@ -14,14 +15,17 @@ describe('Validate User is Register',()=>{
 
        
         cy.fixture('Testdata').then((registerUserdata) => {
+            
                     const SignUpobj = new SignUp();
                        SignUpobj.clickSignUp();
-                       SignUpobj.setUserName(registerUserdata.UserName);
+                       SignUpobj.setUserName(registerUserdata.UserName+Math.floor(Math.random() * 101));
                        SignUpobj.setPassword(registerUserdata.UserPassword);
-                       cy.logToExternalFile("Entered User Details-->SignUp Test");
+                       cy.UILogs("Entered User Details-->SignUp Test");
                        SignUpobj.clickSubmit();
                        SignUpobj.verifySuccessMsg(registerUserdata.expectedsignupMsg);
-                       cy.logToExternalFile("Verify User is able to signup-->SignUp Test");
+                       cy.UILogs("Verify User is able to signup-->SignUp Test");
+                       const loadTime = Date.now() - startTime;
+                       cy.PerformanceLogs(`TotalTime taken to registerUser: ${loadTime}ms`);
            })
         
     })
@@ -34,7 +38,7 @@ describe('Validate User is Register',()=>{
                        SignUpobj.setPassword(registerUserdata.UserPassword);
                        SignUpobj.clickSubmit();
                        SignUpobj.verifyUserexist(registerUserdata.userExistMsg)
-                       cy.logToExternalFile("Verify User Exist message");
+                       cy.UILogs("Verify User Exist message");
            })
         
     })
@@ -45,7 +49,7 @@ describe('Validate User is Register',()=>{
                        SignUpobj.clickSignUp();
                        SignUpobj.clickSubmit();
                        SignUpobj.verifyUserexist(registerUserdata.InvalidDataMsg)
-                       cy.logToExternalFile("Verify Invalid Data message");
+                       cy.UILogs("Verify Invalid Data message");
            })
         
     })

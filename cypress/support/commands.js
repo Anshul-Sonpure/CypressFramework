@@ -31,7 +31,7 @@ cy.on('uncaught:exception', (err, runnable) => {
     // Return false to prevent Cypress from failing the test
     return false;
 })
-Cypress.Commands.add('logToExternalFile', (message) => {
+Cypress.Commands.add('UILogs', (message) => {
     // Define the log file path
     const logFilePath = 'cypress/logs/application.log';
   
@@ -39,9 +39,9 @@ Cypress.Commands.add('logToExternalFile', (message) => {
     cy.writeFile(logFilePath, `[${new Date().toISOString()}] ${message}\n`, { flag: 'a+' });
 });
 
-Cypress.Commands.add('logToExternalFile', (message) => {
+Cypress.Commands.add('PerformanceLogs', (message) => {
     // Define the log file path
-    const logFilePath = 'cypress/logs/application.log';
+    const logFilePath = 'cypress/logs/performance.log';
   
     // Create or append to the log file
     cy.writeFile(logFilePath, `[${new Date().toISOString()}] ${message}\n`, { flag: 'a+' });

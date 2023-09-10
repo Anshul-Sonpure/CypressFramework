@@ -2,13 +2,13 @@ import { before } from "mocha";
 import Login from "../PageClass/Login";
 import AddProduct from "../PageClass/AddProduct";
 import '../support/commands';
-
+const startTime = Date.now();
 describe('Validate User is able to make Purchase',()=>{
 
     beforeEach(() => {
         // Launch the application URL
         cy.visit('https://www.demoblaze.com/');
-        cy.logToExternalFile("Launched Application-->Login Test");
+        cy.UILogs("Launched Application-->Login Test");
       });
 
       it('Validate Add Product',()=> {
@@ -17,11 +17,11 @@ describe('Validate User is able to make Purchase',()=>{
                        loginobj.clickLogin();
                        loginobj.setUserName(data.UserName);
                        loginobj.setPassword(data.UserPassword);
-                       cy.logToExternalFile("Entered User Details-->Login Test");
+                       cy.UILogs("Entered User Details-->Login Test");
                        loginobj.clickLoginbtn();
                        loginobj.verifyLoginSuccessMsg(data.loginmsg);
-                       cy.logToExternalFile("Validated success Login Msg-->Login Test");
-                       cy.logToExternalFile("Validated success Login Msg-->Login Test");
+                       cy.UILogs("Validated success Login Msg-->Login Test");
+                       cy.UILogs("Validated success Login Msg-->Login Test");
                        const prdobj = new AddProduct();
                        prdobj.addProduct();
                        prdobj.enterName(data.name);
@@ -32,6 +32,8 @@ describe('Validate User is able to make Purchase',()=>{
                        prdobj.enteryear(data.Year);
                        prdobj.clickPurchase();
                        prdobj.validateOrder();
+                       const loadTime = Date.now() - startTime;
+                cy.PerformanceLogs(`TotalTime taken to Purchase Product: ${loadTime}ms`);
              
       })
 

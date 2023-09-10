@@ -1,0 +1,7 @@
+[2023-09-10T15:04:46.083Z] TotalTime taken: 2ms
+[2023-09-10T15:05:28.541Z] TotalTime taken to registerUser: 2ms
+[2023-09-10T15:05:53.914Z] TotalTime taken to registerUser: 2ms
+[2023-09-10T15:26:07.059Z] TotalTime taken to registerUser: 2759ms
+[2023-09-10T15:31:14.067Z] TotalTime taken to LoginUser: 3609ms
+[2023-09-10T15:31:32.526Z] TotalTime taken to ValidateMonitor's: 3056ms
+[2023-09-10T15:31:44.736Z] TotalTime taken to registerUser: 2358ms

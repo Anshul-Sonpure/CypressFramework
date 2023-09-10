@@ -2,13 +2,13 @@ import { before } from "mocha";
 import Login from "../PageClass/Login";
 import '../support/commands';
 
-
+const startTime = Date.now();
 describe('Validate User is Register',()=>{
 
     beforeEach(() => {
         // Launch the application URL
         cy.visit('https://www.demoblaze.com/');
-        cy.logToExternalFile("Launched Application-->Login Test");
+        cy.UILogs("Launched Application-->Login Test");
       });
     
    
@@ -18,10 +18,12 @@ describe('Validate User is Register',()=>{
                        loginobj.clickLogin();
                        loginobj.setUserName(registerUserdata.UserName);
                        loginobj.setPassword(registerUserdata.UserPassword);
-                       cy.logToExternalFile("Entered User Details-->Login Test");
+                       cy.UILogs("Entered User Details-->Login Test");
                        loginobj.clickLoginbtn();
                        loginobj.verifyLoginSuccessMsg(registerUserdata.loginmsg);
-                       cy.logToExternalFile("Validated success Login Msg-->Login Test");
+                       cy.UILogs("Validated success Login Msg-->Login Test");
+                       const loadTime = Date.now() - startTime;
+                       cy.PerformanceLogs(`TotalTime taken to LoginUser: ${loadTime}ms`);
            })
         
     })

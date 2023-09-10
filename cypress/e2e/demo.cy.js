@@ -6,7 +6,7 @@ describe('template spec', () => {
        cy.log(registerUserdata.expectedsignupMsg);
        cy.log(registerUserdata.userExistMsg);
        cy.log(registerUserdata.InvalidDataMsg);
-       cy.log(registerUserdata.loginmsg);
+       cy.log(Math.floor(Math.random() * 101));
     })
   })
 })
