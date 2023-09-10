@@ -1,12 +1,8 @@
 describe('template spec', () => {
   it('passes', () => {
-    cy.fixture('Testdata').then((registerUserdata) => {
-       cy.log(registerUserdata.UserName);
-       cy.log(registerUserdata.UserPassword);
-       cy.log(registerUserdata.expectedsignupMsg);
-       cy.log(registerUserdata.userExistMsg);
-       cy.log(registerUserdata.InvalidDataMsg);
-       cy.log(Math.floor(Math.random() * 101));
+      
+    cy.logger('apitest', 'This is a apitest log message');
+    cy.logger('application', 'This is a webui log message');
+    cy.logger('performance', 'This is a performance log message');
     })
   })
-})

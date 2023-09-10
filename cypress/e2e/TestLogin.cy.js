@@ -8,7 +8,7 @@ describe('Validate User is Register',()=>{
     beforeEach(() => {
         // Launch the application URL
         cy.visit('https://www.demoblaze.com/');
-        cy.UILogs("Launched Application-->Login Test");
+        cy.logger('application',"Launched Application-->Login Test");
       });
     
    
@@ -18,12 +18,12 @@ describe('Validate User is Register',()=>{
                        loginobj.clickLogin();
                        loginobj.setUserName(registerUserdata.UserName);
                        loginobj.setPassword(registerUserdata.UserPassword);
-                       cy.UILogs("Entered User Details-->Login Test");
+                       cy.logger('application',"Entered User Details-->Login Test");
                        loginobj.clickLoginbtn();
                        loginobj.verifyLoginSuccessMsg(registerUserdata.loginmsg);
-                       cy.UILogs("Validated success Login Msg-->Login Test");
+                       cy.logger('application',"Validated success Login Msg-->Login Test");
                        const loadTime = Date.now() - startTime;
-                       cy.PerformanceLogs(`TotalTime taken to LoginUser: ${loadTime}ms`);
+                       cy.logger('performance',`TotalTime taken to LoginUser: ${loadTime}ms`);
            })
         
     })

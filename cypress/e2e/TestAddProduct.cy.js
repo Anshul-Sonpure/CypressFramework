@@ -8,7 +8,7 @@ describe('Validate User is able to make Purchase',()=>{
     beforeEach(() => {
         // Launch the application URL
         cy.visit('https://www.demoblaze.com/');
-        cy.UILogs("Launched Application-->Login Test");
+        cy.logger('application',"Launched Application-->Login Test");
       });
 
       it('Validate Add Product',()=> {
@@ -17,11 +17,11 @@ describe('Validate User is able to make Purchase',()=>{
                        loginobj.clickLogin();
                        loginobj.setUserName(data.UserName);
                        loginobj.setPassword(data.UserPassword);
-                       cy.UILogs("Entered User Details-->Login Test");
+                       cy.logger('application',"Entered User Details-->Login Test");
                        loginobj.clickLoginbtn();
                        loginobj.verifyLoginSuccessMsg(data.loginmsg);
-                       cy.UILogs("Validated success Login Msg-->Login Test");
-                       cy.UILogs("Validated success Login Msg-->Login Test");
+                       cy.logger('application',"Validated success Login Msg-->Login Test");
+                       cy.logger('application',"Validated success Login Msg-->Login Test");
                        const prdobj = new AddProduct();
                        prdobj.addProduct();
                        prdobj.enterName(data.name);
@@ -33,7 +33,7 @@ describe('Validate User is able to make Purchase',()=>{
                        prdobj.clickPurchase();
                        prdobj.validateOrder();
                        const loadTime = Date.now() - startTime;
-                cy.PerformanceLogs(`TotalTime taken to Purchase Product: ${loadTime}ms`);
+                cy.logger('performance',`TotalTime taken to Purchase Product: ${loadTime}ms`);
              
       })
 

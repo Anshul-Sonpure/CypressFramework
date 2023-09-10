@@ -332,3 +332,23 @@
 [2023-09-10T15:31:46.860Z] Verify User Exist message
 [2023-09-10T15:31:47.573Z] Launched Application-->SignUp Test
 [2023-09-10T15:31:48.113Z] Verify Invalid Data message
+[2023-09-10T16:56:15.885Z] This is a webui log message
+[2023-09-10T16:56:46.404Z] This is a webui log message
+[2023-09-10T17:10:33.663Z] This is a webui log message
+[2023-09-10T17:10:44.193Z] Launched Application-->Login Test
+[2023-09-10T17:10:45.840Z] Entered User Details-->Login Test
+[2023-09-10T17:10:49.419Z] Validated success Login Msg-->Login Test
+[2023-09-10T17:10:49.461Z] Validated success Login Msg-->Login Test
+[2023-09-10T17:11:09.793Z] Launched Application-->Login Test
+[2023-09-10T17:11:11.257Z] Entered User Details-->Login Test
+[2023-09-10T17:11:13.939Z] Validated success Login Msg-->Login Test
+[2023-09-10T17:11:24.509Z] Launched Application-->Login Test
+[2023-09-10T17:11:26.087Z] Entered User Details-->Login Test
+[2023-09-10T17:11:29.624Z] Validated success Login Msg-->Login Test
+[2023-09-10T17:11:40.061Z] Launched Application-->SignUp Test
+[2023-09-10T17:11:42.169Z] Entered User details-->SignUp Test
+[2023-09-10T17:11:42.466Z] Verified User SignUp-->SignUp Test
+[2023-09-10T17:11:43.616Z] Launched Application-->SignUp Test
+[2023-09-10T17:11:44.900Z] Verify User Exist message
+[2023-09-10T17:11:45.543Z] Launched Application-->SignUp Test
+[2023-09-10T17:11:46.145Z] Verify Invalid Data message

@@ -39,9 +39,9 @@ Cypress.Commands.add('UILogs', (message) => {
     cy.writeFile(logFilePath, `[${new Date().toISOString()}] ${message}\n`, { flag: 'a+' });
 });
 
-Cypress.Commands.add('PerformanceLogs', (message) => {
-    // Define the log file path
-    const logFilePath = 'cypress/logs/performance.log';
+Cypress.Commands.add('logger', (filename, message) => {
+    // Define the log file path based on the filename parameter
+    const logFilePath = `cypress/logs/${filename}.log`;
   
     // Create or append to the log file
     cy.writeFile(logFilePath, `[${new Date().toISOString()}] ${message}\n`, { flag: 'a+' });
