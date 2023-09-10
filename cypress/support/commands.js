@@ -38,3 +38,11 @@ Cypress.Commands.add('logToExternalFile', (message) => {
     // Create or append to the log file
     cy.writeFile(logFilePath, `[${new Date().toISOString()}] ${message}\n`, { flag: 'a+' });
 });
+
+Cypress.Commands.add('logToExternalFile', (message) => {
+    // Define the log file path
+    const logFilePath = 'cypress/logs/application.log';
+  
+    // Create or append to the log file
+    cy.writeFile(logFilePath, `[${new Date().toISOString()}] ${message}\n`, { flag: 'a+' });
+  });

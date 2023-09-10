@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "@faker-js/faker": "^8.0.2",
-    "cypress": "^13.1.0"
+    "cypress": "^13.1.0",
+    "mocha": "^10.2.0"
   },
   "devDependencies": {
     "cypress-xpath": "^2.0.1"
