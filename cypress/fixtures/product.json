@@ -1,0 +1,15 @@
+{
+    "UserName": "PeterPanter",
+    "UserPassword": "Panter@123",
+  "loginmsg": "Welcome PeterPanter",
+    "product" : "Samsung galaxy s6",
+    "Price" : "$360",
+    "expectedMsg1" :"Product added.",
+    "name" : "JackSon",
+    "Country" :"Russia",
+    "City" : "Moscow",
+    "Creditcard" : "8173239123",
+    "Month" : "08",
+    "Year":"2028",
+    "expectedMsg3" : "Please fill out Name and Creditcard."
+}

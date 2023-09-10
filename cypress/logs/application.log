@@ -39,3 +39,132 @@
 [2023-09-10T11:49:25.294Z] Launched Application-->Login Test
 [2023-09-10T11:49:26.799Z] Entered User Details-->Login Test
 [2023-09-10T11:49:30.058Z] Validated success Login Msg-->Login Test
+[2023-09-10T12:24:04.296Z] Launched Application-->Login Test
+[2023-09-10T12:24:05.825Z] Entered User Details-->Login Test
+[2023-09-10T12:24:09.059Z] Validated success Login Msg-->Login Test
+[2023-09-10T12:25:48.015Z] Launched Application-->Login Test
+[2023-09-10T12:25:49.617Z] Entered User Details-->Login Test
+[2023-09-10T12:25:54.548Z] Validated success Login Msg-->Login Test
+[2023-09-10T12:26:37.814Z] Launched Application-->Login Test
+[2023-09-10T12:26:39.409Z] Entered User Details-->Login Test
+[2023-09-10T12:26:42.293Z] Validated success Login Msg-->Login Test
+[2023-09-10T12:29:23.846Z] Launched Application-->Login Test
+[2023-09-10T12:29:25.423Z] Entered User Details-->Login Test
+[2023-09-10T12:29:28.362Z] Validated success Login Msg-->Login Test
+[2023-09-10T12:30:45.600Z] Launched Application-->Login Test
+[2023-09-10T12:31:33.885Z] Launched Application-->Login Test
+[2023-09-10T12:31:35.451Z] Entered User Details-->Login Test
+[2023-09-10T12:31:40.578Z] Validated success Login Msg-->Login Test
+[2023-09-10T12:32:17.558Z] Launched Application-->Login Test
+[2023-09-10T12:32:19.124Z] Entered User Details-->Login Test
+[2023-09-10T12:32:22.035Z] Validated success Login Msg-->Login Test
+[2023-09-10T12:32:52.128Z] Launched Application-->Login Test
+[2023-09-10T12:32:53.981Z] Entered User Details-->Login Test
+[2023-09-10T12:32:56.948Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:39:20.873Z] Launched Application-->Login Test
+[2023-09-10T13:39:22.663Z] Entered User Details-->Login Test
+[2023-09-10T13:39:26.127Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:39:45.271Z] Launched Application-->Login Test
+[2023-09-10T13:39:46.788Z] Entered User Details-->Login Test
+[2023-09-10T13:39:49.762Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:39:49.811Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:40:44.385Z] Launched Application-->Login Test
+[2023-09-10T13:40:46.171Z] Entered User Details-->Login Test
+[2023-09-10T13:40:48.708Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:40:48.783Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:41:07.383Z] Launched Application-->Login Test
+[2023-09-10T13:41:09.164Z] Entered User Details-->Login Test
+[2023-09-10T13:41:11.998Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:41:12.085Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:41:38.803Z] Launched Application-->Login Test
+[2023-09-10T13:41:40.610Z] Entered User Details-->Login Test
+[2023-09-10T13:41:42.943Z] Launched Application-->Login Test
+[2023-09-10T13:41:44.498Z] Entered User Details-->Login Test
+[2023-09-10T13:41:47.117Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:41:47.189Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:42:06.629Z] Launched Application-->Login Test
+[2023-09-10T13:42:08.136Z] Entered User Details-->Login Test
+[2023-09-10T13:42:19.205Z] Launched Application-->Login Test
+[2023-09-10T13:42:20.903Z] Entered User Details-->Login Test
+[2023-09-10T13:42:23.865Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:42:23.924Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:43:17.886Z] Launched Application-->Login Test
+[2023-09-10T13:43:19.432Z] Entered User Details-->Login Test
+[2023-09-10T13:43:22.508Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:43:22.567Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:43:29.952Z] Product Added to Cart and Placed Order
+[2023-09-10T13:43:30.482Z] User Name Entered
+[2023-09-10T13:43:30.890Z] Country Entered
+[2023-09-10T13:43:31.336Z] City Entered
+[2023-09-10T13:43:31.888Z] Card Entered
+[2023-09-10T13:43:32.432Z] Month Entered
+[2023-09-10T13:43:33.036Z] Year Entered
+[2023-09-10T13:43:33.312Z] Clicked On Purchased
+[2023-09-10T13:43:33.430Z] OrderId : 
+[2023-09-10T13:44:09.418Z] Launched Application-->Login Test
+[2023-09-10T13:44:10.901Z] Entered User Details-->Login Test
+[2023-09-10T13:44:14.118Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:44:14.185Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:44:21.346Z] Product Added to Cart and Placed Order
+[2023-09-10T13:44:21.960Z] User Name Entered
+[2023-09-10T13:44:22.588Z] Country Entered
+[2023-09-10T13:44:23.223Z] City Entered
+[2023-09-10T13:44:23.814Z] Card Entered
+[2023-09-10T13:44:24.311Z] Month Entered
+[2023-09-10T13:44:24.799Z] Year Entered
+[2023-09-10T13:44:25.167Z] Clicked On Purchased
+[2023-09-10T13:44:25.318Z] OrderId : 
+[2023-09-10T13:45:29.764Z] Launched Application-->Login Test
+[2023-09-10T13:45:31.394Z] Entered User Details-->Login Test
+[2023-09-10T13:45:34.897Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:45:34.952Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:45:42.307Z] Product Added to Cart and Placed Order
+[2023-09-10T13:45:42.988Z] User Name Entered
+[2023-09-10T13:45:43.604Z] Country Entered
+[2023-09-10T13:45:44.161Z] City Entered
+[2023-09-10T13:45:44.587Z] Card Entered
+[2023-09-10T13:45:45.058Z] Month Entered
+[2023-09-10T13:45:45.537Z] Year Entered
+[2023-09-10T13:45:45.876Z] Clicked On Purchased
+[2023-09-10T13:45:46.002Z] OrderId : 
+[2023-09-10T13:45:48.115Z] Validated Order & Logout
+[2023-09-10T13:46:16.722Z] Launched Application-->Login Test
+[2023-09-10T13:46:18.376Z] Entered User Details-->Login Test
+[2023-09-10T13:46:21.510Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:46:21.651Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:46:29.536Z] Product Added to Cart and Placed Order
+[2023-09-10T13:46:30.158Z] User Name Entered
+[2023-09-10T13:46:30.605Z] Country Entered
+[2023-09-10T13:46:31.070Z] City Entered
+[2023-09-10T13:46:31.652Z] Card Entered
+[2023-09-10T13:46:32.135Z] Month Entered
+[2023-09-10T13:46:32.708Z] Year Entered
+[2023-09-10T13:46:33.149Z] Clicked On Purchased
+[2023-09-10T13:46:33.290Z] OrderId : 
+[2023-09-10T13:46:35.419Z] Validated Order & Logout
+[2023-09-10T13:49:55.705Z] Launched Application-->Login Test
+[2023-09-10T13:49:57.294Z] Entered User Details-->Login Test
+[2023-09-10T13:50:00.584Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:50:00.636Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:50:09.283Z] Product Added to Cart and Placed Order
+[2023-09-10T13:50:09.863Z] User Name Entered
+[2023-09-10T13:50:10.281Z] Country Entered
+[2023-09-10T13:50:10.779Z] City Entered
+[2023-09-10T13:50:11.419Z] Card Entered
+[2023-09-10T13:50:11.941Z] Month Entered
+[2023-09-10T13:50:12.381Z] Year Entered
+[2023-09-10T13:50:12.715Z] Clicked On Purchased
+[2023-09-10T13:52:15.728Z] Launched Application-->Login Test
+[2023-09-10T13:52:17.631Z] Entered User Details-->Login Test
+[2023-09-10T13:52:20.629Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:52:20.704Z] Validated success Login Msg-->Login Test
+[2023-09-10T13:52:29.279Z] Product Added to Cart and Placed Order
+[2023-09-10T13:52:29.928Z] User Name Entered
+[2023-09-10T13:52:30.432Z] Country Entered
+[2023-09-10T13:52:31.102Z] City Entered
+[2023-09-10T13:52:31.808Z] Card Entered
+[2023-09-10T13:52:32.288Z] Month Entered
+[2023-09-10T13:52:32.907Z] Year Entered
+[2023-09-10T13:52:33.216Z] Clicked On Purchased
+[2023-09-10T13:52:33.333Z] Order Id :Id: 7885103Amount: 360 USDCard Number: 8173239123Name: JackDate: 10/8/2023
+[2023-09-10T13:52:34.957Z] Validated Order & Logout

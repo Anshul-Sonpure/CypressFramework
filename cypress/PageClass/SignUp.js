@@ -9,7 +9,6 @@ class SignUp
     {
         cy.xpath(this.registerbtn).click();
         cy.xpath("//h5[.='Sign up']").should('be.visible');
-        
     }
     
     setUserName(username)
