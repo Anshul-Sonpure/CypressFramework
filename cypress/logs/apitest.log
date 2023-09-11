@@ -1,18 +1,250 @@
-[2023-09-11T09:37:05.251Z] Access Token for Login User
-[2023-09-11T09:37:05.342Z] access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ0MjUwMjksImV4cCI6MTY5NDQyODYyOX0.HNGiGAWwTI3pREWweCJK1jvrVng1BA1xjSd5-KqIkUc
-[2023-09-11T10:41:35.603Z] Access Token for Login User
-[2023-09-11T10:41:35.637Z] access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ0Mjg5MDAsImV4cCI6MTY5NDQzMjUwMH0.iiuzgzP3ghge9N4caxwOAyH-8a9vrQ7Zb6KMFjQg_fk
-[2023-09-11T10:41:40.100Z] Access Token for Login User
-[2023-09-11T10:41:40.138Z] access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ0Mjg5MDQsImV4cCI6MTY5NDQzMjUwNH0.YEcbf_qgf_PExAAdkOxZgASxfBNrC1M-noJeApvAvT8
-[2023-09-11T11:03:44.394Z] Access Token for Login User
-[2023-09-11T11:03:44.429Z] access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ0MzAyMjksImV4cCI6MTY5NDQzMzgyOX0.0_pdBxMuMK3E3IB_EAw8rl-T6GGtNLRRFaYyLmyHmMQ
-[2023-09-11T11:25:30.445Z] Access Token for Login User
-[2023-09-11T11:25:30.489Z] access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ0MzE1MzUsImV4cCI6MTY5NDQzNTEzNX0.hh3JIpeo2MLKXL--hrQDW9VjSZ8fEfCoNBjjY-8diRU
-[2023-09-11T11:29:19.207Z] Access Token for Login User
-[2023-09-11T11:29:19.253Z] access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ0MzE3NjMsImV4cCI6MTY5NDQzNTM2M30.ttdS7q_AvfPG12PKSM1FmR56IVa7BkDnuQP30YglxaY
-[2023-09-11T11:29:48.285Z] Access Token for Login User
-[2023-09-11T11:29:48.341Z] access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ0MzE3OTIsImV4cCI6MTY5NDQzNTM5Mn0.8Dylzv01ZqoYDwiw5PW1zftVJjBxP3V6oxk4iKFmHec
-[2023-09-11T15:17:07.123Z] Access Token for Login User
-[2023-09-11T15:17:07.194Z] access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ0NDU0MzIsImV4cCI6MTY5NDQ0OTAzMn0.5YVq4u9bu3Uj_bTZ52BsiwTN_8-XFMwyAa-kWycI--0
-[2023-09-11T15:17:21.388Z] Access Token for Login User
-[2023-09-11T15:17:21.467Z] access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ0NDU0NDYsImV4cCI6MTY5NDQ0OTA0Nn0.4O7AqtsQ6lgalOzVCrsIpNAh5MchDzBTPbVKCSovMJs
+[2023-09-11T17:59:11.242Z] Validated login with correct email & password
+[2023-09-11T17:59:11.311Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ0NTUxNTYsImV4cCI6MTY5NDQ1ODc1Nn0.wzkcbQlwIH1Yicdb_W9RzIb5EP1MF-H58KrGG3hoOwE
+[2023-09-11T18:14:15.343Z] 
+Validated products for getproduct call
+
+[2023-09-11T18:14:15.361Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": "67000",
+    "locationId": "2",
+    "dealerId": "1",
+    "quantity": "100",
+    "id": 8
+  }
+]
+[2023-09-11T18:21:13.476Z] 
+Validated products for getproduct call
+
+[2023-09-11T18:21:13.497Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": "67000",
+    "locationId": "2",
+    "dealerId": "1",
+    "quantity": "100",
+    "id": 8
+  }
+]
+[2023-09-11T18:22:32.090Z] 
+Validated products for getproduct call
+
+[2023-09-11T18:22:32.107Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": "67000",
+    "locationId": "2",
+    "dealerId": "1",
+    "quantity": "100",
+    "id": 8
+  }
+]
+[2023-09-11T18:22:37.474Z] 
+Validated products for getproduct call
+
+[2023-09-11T18:22:37.490Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": "67000",
+    "locationId": "2",
+    "dealerId": "1",
+    "quantity": "100",
+    "id": 8
+  }
+]

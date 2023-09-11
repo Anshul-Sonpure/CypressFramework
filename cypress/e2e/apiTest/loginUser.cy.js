@@ -1,19 +1,24 @@
 import '../../support/commands';
 const apiconfig = require('../../apiconfig.json');
-describe('Login to API',()=>{
-    it('POST Call',()=>{
-        cy.fixture('loginuser.json').then((requestBody) => {
-            // Make a POST request with the loaded request body
-            cy.request({
-              method: 'POST',
-              url: `${apiconfig.baseUrl}${apiconfig.endpoints.login}`,
-              body: requestBody, // Use the loaded request body
-            }).then((response) => {
-              // Assertions or actions based on the response
-              expect(response.status).to.eq(200); // Check the response status code
-              cy.logger('apitest',"Access Token for Login User");
-             cy.logger('apitest',"access_token:"+response.body.access_token);
-            });
-          });
-    })
+const { login } = require('../../support/loginUtils');
+const loginuser = require('../../fixtures/loginuser.json');
+
+
+describe('Login to API to get valid access_token', () => {
+  it('login with correct email & password', () => {
+    login(`${loginuser.email}`, `${loginuser.password}`)
+      .then((result) => { // Receive the object containing response and access_token
+        const response = result.response; // Access the entire response object
+        // Assert that the response status code is 200
+        expect(response.status).to.eq(200);
+        // Assert that the response body contains the 'access_token' property
+        expect(response.body).to.have.property('access_token').that.is.not.empty;
+        const responseBodyString = JSON.stringify(response.body, null, 2);
+        cy.logger('apitest', 'Validated login with correct email & password');
+        cy.logger('apitest', response.body.access_token);
+        cy.log(responseBodyString);
+
+
+      })
+  })
 })
