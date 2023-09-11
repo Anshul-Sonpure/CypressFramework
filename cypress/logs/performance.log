@@ -11,3 +11,4 @@
 [2023-09-10T17:11:13.983Z] TotalTime taken to LoginUser: 3358ms
 [2023-09-10T17:11:30.760Z] TotalTime taken to ValidateMonitor's: 2257ms
 [2023-09-10T17:11:42.578Z] TotalTime taken to registerUser: 2278ms
+[2023-09-11T09:30:54.114Z] This is a performance log message

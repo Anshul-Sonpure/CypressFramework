@@ -31,13 +31,6 @@ cy.on('uncaught:exception', (err, runnable) => {
     // Return false to prevent Cypress from failing the test
     return false;
 })
-Cypress.Commands.add('UILogs', (message) => {
-    // Define the log file path
-    const logFilePath = 'cypress/logs/application.log';
-  
-    // Create or append to the log file
-    cy.writeFile(logFilePath, `[${new Date().toISOString()}] ${message}\n`, { flag: 'a+' });
-});
 
 Cypress.Commands.add('logger', (filename, message) => {
     // Define the log file path based on the filename parameter

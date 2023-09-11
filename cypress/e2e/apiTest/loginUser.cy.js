@@ -1,12 +1,12 @@
 import '../../support/commands';
-
+const apiconfig = require('../../apiconfig.json');
 describe('Login to API',()=>{
     it('POST Call',()=>{
         cy.fixture('loginuser.json').then((requestBody) => {
             // Make a POST request with the loaded request body
             cy.request({
               method: 'POST',
-              url: 'https://mobilestoreapi.onrender.com/auth/login',
+              url: `${apiconfig.baseUrl}${apiconfig.endpoints.login}`,
               body: requestBody, // Use the loaded request body
             }).then((response) => {
               // Assertions or actions based on the response
