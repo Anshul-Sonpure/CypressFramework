@@ -21,4 +21,18 @@ describe('Login to API to get valid access_token', () => {
 
       })
   })
+  it('login with incorrect email & password', () => {
+    login(`${loginuser.incorrectemail}`, `${loginuser.password}`)
+      .then((result) => { // Receive the object containing response and access_token
+        const response = result.response; // Access the entire response object
+        // Assert that the response status code is 200
+        expect(response.status).to.eq(401);
+        // Assert that the response body contains the 'access_token' property
+        expect(response.body.message).to.eq('Incorrect email or password');
+
+
+      })
+  })
+
+
 })

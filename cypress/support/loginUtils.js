@@ -9,6 +9,7 @@ function login(email, password) {
             email: email,
             password: password,
         },
+        failOnStatusCode: false, // Ignore the status code and continue the test
     }).then((response) => {
         return {
             response: response, // Include the entire response object
