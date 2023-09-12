@@ -25,7 +25,7 @@ This Cypress Automation Framework follows a structured approach for better maint
 ### Comprehensive Testing
 This framework is designed to support various testing types:
 
-- UI Testing: UI tests are located under the e2e folder. Each test file typically follows the naming convention Test<pageclassname>.cy.js, where <pageclassname> represents the page being tested.
+- UI Testing: UI tests are located under the e2e folder. Each test file typically follows the naming convention Test"pageclassname".cy.js, where "pageclassname" represents the page being tested.
 
 - API Testing: API tests are located in the e2e/apiTest folder. These tests utilize the apiconfig.json file for endpoint configuration and the apiUtils.js utility functions for common API interactions.
 
