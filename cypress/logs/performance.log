@@ -1,14 +1,4 @@
-[2023-09-10T15:04:46.083Z] TotalTime taken: 2ms
-[2023-09-10T15:05:28.541Z] TotalTime taken to registerUser: 2ms
-[2023-09-10T15:05:53.914Z] TotalTime taken to registerUser: 2ms
-[2023-09-10T15:26:07.059Z] TotalTime taken to registerUser: 2759ms
-[2023-09-10T15:31:14.067Z] TotalTime taken to LoginUser: 3609ms
-[2023-09-10T15:31:32.526Z] TotalTime taken to ValidateMonitor's: 3056ms
-[2023-09-10T15:31:44.736Z] TotalTime taken to registerUser: 2358ms
-[2023-09-10T16:56:15.918Z] This is a performance log message
-[2023-09-10T16:56:46.443Z] This is a performance log message
-[2023-09-10T17:10:33.683Z] This is a performance log message
-[2023-09-10T17:11:13.983Z] TotalTime taken to LoginUser: 3358ms
-[2023-09-10T17:11:30.760Z] TotalTime taken to ValidateMonitor's: 2257ms
-[2023-09-10T17:11:42.578Z] TotalTime taken to registerUser: 2278ms
-[2023-09-11T09:30:54.114Z] This is a performance log message
+[2023-09-12T14:56:52.822Z] TotalTime taken to LoginUser: 2530ms
+[2023-09-12T14:56:55.351Z] TotalTime taken to registerUser: 10007ms
+[2023-09-12T14:57:08.149Z] TotalTime taken to ValidateMonitor's: 17312ms
+[2023-09-12T14:57:35.102Z] TotalTime taken to Purchase Product: 27023ms

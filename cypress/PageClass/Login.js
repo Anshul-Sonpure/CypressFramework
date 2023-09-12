@@ -15,6 +15,7 @@ class Login
 
     setUserName(username)
     {
+        cy.wait(2000)
         cy.xpath(this.usernametxt).click().type(username);
     }
     setPassword(password)

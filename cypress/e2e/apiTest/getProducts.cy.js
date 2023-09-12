@@ -17,8 +17,7 @@ describe('Get all products', () => {
           const productNames = JSONPath({ path: '$..name', json: response.body });
 
           // Assertion for products
-          expect(productNames).to.include('Samsung Galaxy A23 Blue');
-          expect(productNames).to.include('Samsung Galaxy S23 Blue');
+          expect(productNames).to.include('Samsung Galaxy A23 Blue','Redmi 11 Prime 5G','Samsung Galaxy Flip 5G');
 
           //logging the reponse in log file;
           const responseBodyString = JSON.stringify(response.body, null, 2);
@@ -37,13 +36,12 @@ describe('Get all products', () => {
         getproducts(accessToken).then((response) => {
 
           expect(response.status).to.eq(200); // validate status code as 200 OK
-          const quantityValue = JSONPath({ path: '$[?(@.name === "Samsung Galaxy A23 Blue")].quantity', json: response.body });
-          const SamsungS23price = JSONPath({ path: '$.[5].cost', json: response.body });
-          const oneplusDealerId = JSONPath({ path: '$.[2].DealerId', json: response.body });
+          const A23Price  = JSONPath({ path: '$.[0].cost', json: response.body });
+          const M33Name = JSONPath({ path: '$.[2].name', json: response.body });
           // Assertion for products
-          expect(quantityValue).to.deep.eq([100]);
-          expect(SamsungS23price).to.deep.eq([120000]);
-          expect(oneplusDealerId).to.deep.eq([3]);
+          expect(M33Name[0]).to.equal('Samsung Galaxy M33 5G ');
+          expect(A23Price).to.deep.eq([18999]);
+          cy.log(JSON.stringify(response.body, null, 2))
         })
       })
   })

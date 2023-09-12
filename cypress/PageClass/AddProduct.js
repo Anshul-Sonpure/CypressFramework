@@ -29,47 +29,48 @@ class AddProduct
         cy.xpath(this.addtoCart).click();
         cy.xpath(this.cart).click();
         cy.xpath(this.totalprice).should('have.text','360');
+        cy.wait(2500);
+        cy.xpath("//div[@id='page-wrapper']").screenshot();
         cy.xpath(this.placeOrder).click();
         cy.logger('application','Product Added to Cart and Placed Order');
-        cy.wait(2500);
-        cy.screenshot('addProduct', { capture: 'fullPage' });
+        
     }
     enterName(data)
     {
         cy.xpath(this.name).click().type(data);
-        cy.logger('application','User Name Entered');
+        
     }
     entercountry(data)
     {
         cy.xpath(this.country).click().type(data);
-        cy.logger('application','Country Entered');
+        
 
     }
     entercity(data)
     {
         cy.xpath(this.city).click().type(data);
-        cy.logger('application','City Entered');
+        
     }
     entercard(data)
     {
         cy.xpath(this.card).click().type(data);
-        cy.logger('application','Card Entered');
+        
     }
     entermonth(data)
     {
         cy.xpath(this.month).click().type(data);
-        cy.logger('application','Month Entered');
+        
     }
     enteryear(data)
     {
         cy.xpath(this.year).click().type(data);
-        cy.logger('application','Year Entered');
-        cy.screenshot('UserDetails', { capture: 'fullPage' });
+       
+        cy.xpath("//div[@id='page-wrapper']").screenshot();
     }
     clickPurchase()
     {
         cy.xpath(this.purchasebtn).click();
-        cy.logger('application','Clicked On Purchased');
+        cy.logger('application','User detaile entered & Clicked On Purchased');
     }
     validateOrder()
     {
@@ -77,7 +78,7 @@ class AddProduct
         cy.xpath(this.thankmsg).should('have.text','Thank you for your purchase!');
         cy.xpath(this.orderdetails).then(($value) => {
             let orderid = $value.text()
-            cy.logger('Order Id :'+orderid );
+            cy.logger('application','Order Id :'+orderid );
         })
         cy.xpath(this.orderdetails).screenshot('OrderPurchased');
           cy.xpath(this.okbtn).click();

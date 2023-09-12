@@ -15,6 +15,7 @@
     "mocha": "^10.2.0"
   },
   "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.6.0",
     "cypress-xpath": "^2.0.1"
   }
 }

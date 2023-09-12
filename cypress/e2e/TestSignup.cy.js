@@ -38,7 +38,7 @@ describe('Validate User is Register',()=>{
                        SignUpobj.setPassword(registerUserdata.UserPassword);
                        SignUpobj.clickSubmit();
                        SignUpobj.verifyUserexist(registerUserdata.userExistMsg)
-                       cy.UILogs("Verify User Exist message");
+                       cy.logger('application',"Verify User Exist message");
            })
         
     })
@@ -49,7 +49,7 @@ describe('Validate User is Register',()=>{
                        SignUpobj.clickSignUp();
                        SignUpobj.clickSubmit();
                        SignUpobj.verifyUserexist(registerUserdata.InvalidDataMsg)
-                       cy.UILogs("Verify Invalid Data message");
+                       cy.logger('application',"Verify Invalid Data message");
            })
         
     })

@@ -5,7 +5,7 @@ const apiconfig = require('../../apiconfig.json');
 const { login,deleteProduct } = require('../../support/apiUtils');
 const loginuser = require('../../fixtures/loginuser.json');
 
-const productId = 7;
+const productId = 6;
 
 describe('Delete Product', () => {
     it('Validate user is able to delete existing products', () => {

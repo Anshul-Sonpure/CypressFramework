@@ -5,7 +5,7 @@ const apiconfig = require('../../apiconfig.json');
 const { login, updateProduct, updateProductwithoutToken } = require('../../support/apiUtils');
 const loginuser = require('../../fixtures/loginuser.json');
 
-const productId = 7;
+const productId = 1;
 const payload = {
 
     cost: faker.number.int({ min: 100, max: 90000 }),

@@ -12,6 +12,7 @@ describe('Validate User is able to make Purchase',()=>{
       });
 
       it('Validate Add Product',()=> {
+        cy.viewport(1920, 1080);
         cy.fixture('product').then((data) => {
             const loginobj = new Login();
                        loginobj.clickLogin();
@@ -20,7 +21,6 @@ describe('Validate User is able to make Purchase',()=>{
                        cy.logger('application',"Entered User Details-->Login Test");
                        loginobj.clickLoginbtn();
                        loginobj.verifyLoginSuccessMsg(data.loginmsg);
-                       cy.logger('application',"Validated success Login Msg-->Login Test");
                        cy.logger('application',"Validated success Login Msg-->Login Test");
                        const prdobj = new AddProduct();
                        prdobj.addProduct();
