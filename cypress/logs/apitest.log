@@ -537,3 +537,321 @@ Validated products for getproduct call
   "DealerId": 3,
   "id": 12
 }
+[2023-09-12T15:54:15.574Z] Validated login with correct email & password
+[2023-09-12T15:54:15.607Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ1MzQwNjMsImV4cCI6MTY5NDUzNzY2M30.uY5czs_VzqckzS12cpzch7RDVXKN6Kd_i7GJEoT1cvk
+[2023-09-12T15:54:16.338Z] 
+Validated products for getproduct call
+
+[2023-09-12T15:54:16.357Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": "67000",
+    "locationId": "2",
+    "dealerId": "1",
+    "quantity": "100",
+    "id": 8
+  },
+  {
+    "name": "Intelligent Plastic Chair",
+    "cost": 14229,
+    "quantity": 387,
+    "locationId": 2,
+    "DealerId": 3,
+    "id": 9
+  },
+  {
+    "name": "Handmade Bronze Pants",
+    "cost": 5477,
+    "quantity": 273,
+    "locationId": 3,
+    "DealerId": 5,
+    "id": 10
+  },
+  {
+    "name": "Gorgeous Cotton Mouse",
+    "cost": 23856,
+    "quantity": 458,
+    "locationId": 2,
+    "DealerId": 4,
+    "id": 11
+  }
+]
+[2023-09-12T15:54:17.856Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T15:54:17.876Z] {
+  "name": "Recycled Fresh Chair",
+  "cost": 35754,
+  "quantity": 103,
+  "locationId": 2,
+  "DealerId": 4,
+  "id": 12
+}
+[2023-09-12T16:11:42.547Z] 
+Validated products for getproduct call
+
+[2023-09-12T16:11:42.883Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": "67000",
+    "locationId": "2",
+    "dealerId": "1",
+    "quantity": "100",
+    "id": 8
+  }
+]
+[2023-09-12T16:11:45.511Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T16:11:45.531Z] {
+  "name": "Recycled Wooden Sausages",
+  "cost": 66992,
+  "quantity": 336,
+  "locationId": 2,
+  "DealerId": 2,
+  "id": 9
+}
+[2023-09-12T16:11:53.276Z] Validate user is able to delete products -- Test Passed
+[2023-09-12T16:11:53.299Z] {}
+[2023-09-12T16:40:47.479Z] 
+Validated products for getproduct call
+
+[2023-09-12T16:40:47.514Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": "67000",
+    "locationId": "2",
+    "dealerId": "1",
+    "quantity": "100",
+    "id": 8
+  }
+]
+[2023-09-12T16:40:50.074Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T16:40:50.105Z] {
+  "name": "Elegant Wooden Table",
+  "cost": 12795,
+  "quantity": 388,
+  "locationId": 1,
+  "DealerId": 2,
+  "id": 9
+}
+[2023-09-12T16:40:57.585Z] Validate user is able to delete products -- Test Passed
+[2023-09-12T16:40:57.609Z] {}
+[2023-09-12T16:44:54.608Z] Validate user is able to update existing products -- Test Passed
+[2023-09-12T16:44:54.955Z] {
+  "id": 1,
+  "name": "Samsung Galaxy A23 Blue",
+  "cost": 57727,
+  "quantity": 280,
+  "locationId": 2,
+  "DealerId": 4
+}
+[2023-09-12T16:45:18.914Z] Validated login with correct email & password
+[2023-09-12T16:45:18.945Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ1MzcxMTgsImV4cCI6MTY5NDU0MDcxOH0.mPTtba9A6Ze5fqbps9ZNoI-XF3bYRMjeWsN2b88uiyg
+[2023-09-12T16:45:20.122Z] 
+Validated products for getproduct call
+
+[2023-09-12T16:45:20.152Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 57727,
+    "quantity": 280,
+    "locationId": 2,
+    "DealerId": 4
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": "67000",
+    "locationId": "2",
+    "dealerId": "1",
+    "quantity": "100",
+    "id": 8
+  },
+  {
+    "name": "Elegant Wooden Table",
+    "cost": 12795,
+    "quantity": 388,
+    "locationId": 1,
+    "DealerId": 2,
+    "id": 9
+  }
+]
+[2023-09-12T16:45:21.941Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T16:45:21.969Z] {
+  "name": "Intelligent Plastic Chicken",
+  "cost": 89941,
+  "quantity": 314,
+  "locationId": 3,
+  "DealerId": 1,
+  "id": 10
+}
+[2023-09-12T16:47:28.570Z] Validate user is able to update existing products -- Test Passed
+[2023-09-12T16:47:28.605Z] {
+  "id": 1,
+  "name": "Samsung Galaxy A23 Blue",
+  "cost": 53881,
+  "quantity": 127,
+  "locationId": 3,
+  "DealerId": 2
+}
