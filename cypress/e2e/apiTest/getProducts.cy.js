@@ -1,8 +1,7 @@
 import '../../support/commands';
 const apiconfig = require('../../apiconfig.json');
 const { JSONPath } = require('jsonpath-plus');
-const { login } = require('../../support/loginUtils');
-const { getproducts, getproductswithtoken } = require('../../support/getProductsUtils');
+const { login, getproducts, getproductswithouttoken } = require('../../support/apiUtils');
 const loginuser = require('../../fixtures/loginuser.json');
 
 
@@ -39,19 +38,17 @@ describe('Get all products', () => {
 
           expect(response.status).to.eq(200); // validate status code as 200 OK
           const quantityValue = JSONPath({ path: '$[?(@.name === "Samsung Galaxy A23 Blue")].quantity', json: response.body });
-          const appleprice = JSONPath({ path: '$.[6].cost', json: response.body });
+          const SamsungS23price = JSONPath({ path: '$.[5].cost', json: response.body });
           const oneplusDealerId = JSONPath({ path: '$.[2].DealerId', json: response.body });
           // Assertion for products
           expect(quantityValue).to.deep.eq([100]);
-          expect(appleprice).to.deep.eq(['67000']);
+          expect(SamsungS23price).to.deep.eq([120000]);
           expect(oneplusDealerId).to.deep.eq([3]);
         })
       })
   })
 
   it('Validation for revoked access token', () => {
-    login(`${loginuser.email}`, `${loginuser.password}`)
-
     const accessToken = `${loginuser.revokedtoken}`;
     getproducts(accessToken).then((response) => {
       // Assertion for the status code
@@ -62,15 +59,13 @@ describe('Get all products', () => {
     })
   })
 
-  it('Validation for authorization format', () => {
-    // login(`${loginuser.incorrectemail}`, `${loginuser.password}`).then((result) => {
-    //   const accessToken = result.access_token;
-    getproductswithtoken().then((response) => {
-        // Assertion for the status code
-        expect(response.status).to.eq(401); // validate status code as 401
+  it('Validation for no Auth Token Send', () => {
+    getproductswithouttoken().then((response) => {
+      // Assertion for the status code
+      expect(response.status).to.eq(401); // validate status code as 401
 
-        // Assertion for the error message
-        expect(response.body.message).to.eq('Error in authorization format');
-      })
+      // Assertion for the error message
+      expect(response.body.message).to.eq('Error in authorization format');
     })
   })
+})

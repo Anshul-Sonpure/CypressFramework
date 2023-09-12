@@ -2,8 +2,7 @@ import '../../support/commands';
 import { Faker, en } from '@faker-js/faker';
 const faker = new Faker({ locale: [en] });
 const apiconfig = require('../../apiconfig.json');
-const { login } = require('../../support/loginUtils');
-const { createProduct } = require('../../support/postProductsUtils');
+const { login,createProduct } = require('../../support/apiUtils');
 const loginuser = require('../../fixtures/loginuser.json');
 
 const payload={

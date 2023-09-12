@@ -1202,3 +1202,1257 @@ Validated products for getproduct call
   "DealerId": 1,
   "id": 18
 }
+[2023-09-12T09:36:43.213Z] Validated login with correct email & password
+[2023-09-12T09:36:43.272Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ1MTE0MTAsImV4cCI6MTY5NDUxNTAxMH0.nePS9VM0bTpE9tOqWaHN4j5ItMM1kle7E4c-oARxHIg
+[2023-09-12T09:38:04.717Z] Validated login with correct email & password
+[2023-09-12T09:38:04.749Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ1MTE0OTEsImV4cCI6MTY5NDUxNTA5MX0.2cZ8-uVxKDoWgR85kzUf2tJkKkblD1b4BklG74EpzMw
+[2023-09-12T09:38:09.594Z] Validated login with correct email & password
+[2023-09-12T09:38:09.613Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ1MTE0OTYsImV4cCI6MTY5NDUxNTA5Nn0.9z_kxKQjP-Qa_p7yA0z2HccFGpJHm7ZyPu2kkvfdivE
+[2023-09-12T09:38:17.211Z] Validated login with correct email & password
+[2023-09-12T09:38:17.243Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ1MTE1MDQsImV4cCI6MTY5NDUxNTEwNH0.W-1CzgAki94BxPfWgsDYeQrx7p8fgDOFvAEaGswChHI
+[2023-09-12T09:38:55.100Z] 
+Validated products for getproduct call
+
+[2023-09-12T09:38:55.122Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": "67000",
+    "locationId": "2",
+    "dealerId": "1",
+    "quantity": "100",
+    "id": 8
+  },
+  {
+    "name": "Oriental Frozen Chips",
+    "cost": 44051,
+    "quantity": 159,
+    "locationId": 2,
+    "DealerId": 4,
+    "id": 10
+  },
+  {
+    "name": "Intelligent Frozen Soap",
+    "cost": 21139,
+    "quantity": 400,
+    "locationId": 3,
+    "DealerId": 4,
+    "id": 15
+  },
+  {
+    "name": "Electronic Plastic Salad",
+    "cost": 83454,
+    "quantity": 466,
+    "locationId": 3,
+    "DealerId": 2,
+    "id": 16
+  },
+  {
+    "name": "Practical Metal Sausages",
+    "cost": 4325,
+    "quantity": 254,
+    "locationId": 2,
+    "DealerId": 1,
+    "id": 18
+  },
+  {
+    "name": "Generic Plastic Bike",
+    "cost": 83131,
+    "quantity": 194,
+    "locationId": 5,
+    "DealerId": 1,
+    "id": 19
+  }
+]
+[2023-09-12T09:39:17.176Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T09:39:17.216Z] {
+  "name": "Handmade Granite Hat",
+  "cost": 53625,
+  "quantity": 274,
+  "locationId": 1,
+  "DealerId": 5,
+  "id": 20
+}
+[2023-09-12T10:26:02.804Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T10:26:02.843Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 19544,
+  "locationId": 1,
+  "dealerId": "2",
+  "quantity": 336,
+  "id": 8,
+  "DealerId": 4
+}
+[2023-09-12T10:27:27.394Z] Validate user is able to update existing products -- Test Passed
+[2023-09-12T10:27:27.438Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 37116,
+  "locationId": 3,
+  "dealerId": "2",
+  "quantity": 488,
+  "id": 8,
+  "DealerId": 4
+}
+[2023-09-12T10:46:42.376Z] 
+Validated products for getproduct call
+
+[2023-09-12T10:46:42.394Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 13pro ",
+    "cost": 37116,
+    "locationId": 3,
+    "dealerId": "2",
+    "quantity": 488,
+    "id": 8,
+    "DealerId": 4
+  }
+]
+[2023-09-12T10:47:29.435Z] 
+Validated products for getproduct call
+
+[2023-09-12T10:47:29.454Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 13pro ",
+    "cost": 37116,
+    "locationId": 3,
+    "dealerId": "2",
+    "quantity": 488,
+    "id": 8,
+    "DealerId": 4
+  }
+]
+[2023-09-12T10:47:32.219Z] 
+Validated products for getproduct call
+
+[2023-09-12T10:47:32.245Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 13pro ",
+    "cost": 37116,
+    "locationId": 3,
+    "dealerId": "2",
+    "quantity": 488,
+    "id": 8,
+    "DealerId": 4
+  }
+]
+[2023-09-12T10:47:47.443Z] 
+Validated products for getproduct call
+
+[2023-09-12T10:47:47.463Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 13pro ",
+    "cost": 37116,
+    "locationId": 3,
+    "dealerId": "2",
+    "quantity": 488,
+    "id": 8,
+    "DealerId": 4
+  }
+]
+[2023-09-12T10:49:07.013Z] 
+Validated products for getproduct call
+
+[2023-09-12T10:49:07.029Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 13pro ",
+    "cost": 37116,
+    "locationId": 3,
+    "dealerId": "2",
+    "quantity": 488,
+    "id": 8,
+    "DealerId": 4
+  }
+]
+[2023-09-12T10:49:19.463Z] 
+Validated products for getproduct call
+
+[2023-09-12T10:49:19.484Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 13pro ",
+    "cost": 37116,
+    "locationId": 3,
+    "dealerId": "2",
+    "quantity": 488,
+    "id": 8,
+    "DealerId": 4
+  }
+]
+[2023-09-12T10:49:37.956Z] 
+Validated products for getproduct call
+
+[2023-09-12T10:49:37.974Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 13pro ",
+    "cost": 37116,
+    "locationId": 3,
+    "dealerId": "2",
+    "quantity": 488,
+    "id": 8,
+    "DealerId": 4
+  }
+]
+[2023-09-12T10:51:18.955Z] Validate user is able to update existing products -- Test Passed
+[2023-09-12T10:51:18.980Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 74161,
+  "locationId": 5,
+  "dealerId": "2",
+  "quantity": 148,
+  "id": 8,
+  "DealerId": 4
+}
+[2023-09-12T10:51:31.568Z] Validate user is able to update existing products -- Test Passed
+[2023-09-12T10:51:31.583Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 37319,
+  "locationId": 5,
+  "dealerId": "2",
+  "quantity": 119,
+  "id": 8,
+  "DealerId": 1
+}
+[2023-09-12T10:55:09.147Z] Validate user is able to update existing products -- Test Passed
+[2023-09-12T10:55:09.165Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 20077,
+  "locationId": 3,
+  "dealerId": "2",
+  "quantity": 252,
+  "id": 8,
+  "DealerId": 4
+}
+[2023-09-12T11:03:16.727Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T11:03:16.764Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 63071,
+  "locationId": 2,
+  "dealerId": "2",
+  "quantity": 121,
+  "id": 8,
+  "DealerId": 4
+}
+[2023-09-12T11:03:42.415Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T11:03:42.458Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 13231,
+  "locationId": 1,
+  "dealerId": "2",
+  "quantity": 385,
+  "id": 8,
+  "DealerId": 3
+}
+[2023-09-12T11:05:28.378Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T11:05:28.418Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 19149,
+  "locationId": 3,
+  "dealerId": "2",
+  "quantity": 201,
+  "id": 8,
+  "DealerId": 5
+}
+[2023-09-12T11:06:06.448Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T11:06:06.484Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 45192,
+  "locationId": 3,
+  "dealerId": "2",
+  "quantity": 242,
+  "id": 8,
+  "DealerId": 1
+}
+[2023-09-12T11:08:18.541Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T11:08:18.582Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 36318,
+  "locationId": 4,
+  "dealerId": "2",
+  "quantity": 332,
+  "id": 8,
+  "DealerId": 4
+}
+[2023-09-12T11:21:10.610Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T11:21:10.642Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 54822,
+  "locationId": 4,
+  "dealerId": "2",
+  "quantity": 176,
+  "id": 8,
+  "DealerId": 4
+}
+[2023-09-12T11:29:55.174Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T11:29:55.264Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 76254,
+  "locationId": 5,
+  "dealerId": "2",
+  "quantity": 143,
+  "id": 8,
+  "DealerId": 4
+}
+[2023-09-12T11:38:43.205Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T11:38:43.266Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 3542,
+  "locationId": 1,
+  "dealerId": "2",
+  "quantity": 164,
+  "id": 8,
+  "DealerId": 3
+}
+[2023-09-12T11:44:16.472Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T11:44:16.536Z] {
+  "name": "Apple iphone 13pro ",
+  "cost": 1122,
+  "locationId": 2,
+  "dealerId": "2",
+  "quantity": 390,
+  "id": 8,
+  "DealerId": 3
+}
+[2023-09-12T12:07:29.887Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T12:07:29.942Z] {
+  "name": "Apple iphone 12pro ",
+  "cost": 10940,
+  "locationId": 3,
+  "dealerId": "1",
+  "quantity": 438,
+  "id": 8,
+  "DealerId": 5
+}
+[2023-09-12T12:23:34.863Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T12:23:34.899Z] {
+  "name": "Apple iphone 12pro ",
+  "cost": 41696,
+  "locationId": 3,
+  "dealerId": "1",
+  "quantity": 428,
+  "id": 8,
+  "DealerId": 1
+}
+[2023-09-12T12:39:29.115Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T12:39:29.174Z] {
+  "name": "Apple iphone 12pro ",
+  "cost": 81177,
+  "locationId": 2,
+  "dealerId": "1",
+  "quantity": 169,
+  "id": 8,
+  "DealerId": 4
+}
+[2023-09-12T12:43:53.790Z] Validate user is able to update existing products -- Test Passed
+[2023-09-12T12:43:53.853Z] {
+  "name": "Apple iphone 12pro ",
+  "cost": 16237,
+  "locationId": 1,
+  "dealerId": "1",
+  "quantity": 250,
+  "id": 8,
+  "DealerId": 1
+}
+[2023-09-12T12:44:47.612Z] Validated login with correct email & password
+[2023-09-12T12:44:47.682Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ1MjI2OTQsImV4cCI6MTY5NDUyNjI5NH0.BZQCjgRgfp9JAVbry84bdP_tRtat-GUKD2DuVqhKxdY
+[2023-09-12T12:44:59.540Z] 
+Validated products for getproduct call
+
+[2023-09-12T12:44:59.574Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": 16237,
+    "locationId": 1,
+    "dealerId": "1",
+    "quantity": 250,
+    "id": 8,
+    "DealerId": 1
+  }
+]
+[2023-09-12T12:45:26.610Z] 
+Validated products for getproduct call
+
+[2023-09-12T12:45:26.667Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": 16237,
+    "locationId": 1,
+    "dealerId": "1",
+    "quantity": 250,
+    "id": 8,
+    "DealerId": 1
+  }
+]
+[2023-09-12T12:45:28.836Z] 
+Validated products for getproduct call
+
+[2023-09-12T12:45:28.855Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": 16237,
+    "locationId": 1,
+    "dealerId": "1",
+    "quantity": 250,
+    "id": 8,
+    "DealerId": 1
+  }
+]
+[2023-09-12T12:45:50.650Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T12:45:50.746Z] {
+  "name": "Sleek Rubber Bike",
+  "cost": 13676,
+  "quantity": 439,
+  "locationId": 2,
+  "DealerId": 4,
+  "id": 9
+}
+[2023-09-12T12:46:10.702Z] Validate user is able to update existing products -- Test Passed
+[2023-09-12T12:46:10.749Z] {
+  "name": "Apple iphone 12pro ",
+  "cost": 78460,
+  "locationId": 4,
+  "dealerId": "1",
+  "quantity": 440,
+  "id": 8,
+  "DealerId": 2
+}
+[2023-09-12T12:46:33.753Z] Validate user is able to update existing products -- Test Passed
+[2023-09-12T12:46:33.802Z] {
+  "name": "Apple iphone 12pro ",
+  "cost": 10813,
+  "locationId": 1,
+  "dealerId": "1",
+  "quantity": 196,
+  "id": 8,
+  "DealerId": 5
+}
+[2023-09-12T13:01:05.081Z] Validate user is able to delete products -- Test Passed
+[2023-09-12T13:01:05.151Z] {}
+[2023-09-12T13:02:09.087Z] Validated login with correct email & password
+[2023-09-12T13:02:09.154Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ1MjM3MzYsImV4cCI6MTY5NDUyNzMzNn0.s-jT-xNoc5zUZjNnApXrRpwRjqik0O44PenCpi11oM4
+[2023-09-12T13:02:22.460Z] 
+Validated products for getproduct call
+
+[2023-09-12T13:02:22.513Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  }
+]
+[2023-09-12T13:04:23.179Z] 
+Validated products for getproduct call
+
+[2023-09-12T13:04:23.208Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  }
+]
+[2023-09-12T13:04:45.529Z] 
+Validated products for getproduct call
+
+[2023-09-12T13:04:45.559Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  }
+]
+[2023-09-12T13:05:08.141Z] 
+Validated products for getproduct call
+
+[2023-09-12T13:05:08.209Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  }
+]
+[2023-09-12T13:05:13.377Z] 
+Validated products for getproduct call
+
+[2023-09-12T13:05:13.458Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  }
+]
+[2023-09-12T13:05:34.223Z] Validate user is able to create new products -- Test Passed
+[2023-09-12T13:05:34.293Z] {
+  "name": "Intelligent Steel Pizza",
+  "cost": 75459,
+  "quantity": 461,
+  "locationId": 3,
+  "DealerId": 4,
+  "id": 7
+}
+[2023-09-12T13:13:05.096Z] Validate user is able to update existing products -- Test Passed
+[2023-09-12T13:13:05.147Z] {
+  "name": "Samsung Galaxy S23 Blue",
+  "cost": 9866,
+  "quantity": 288,
+  "locationId": 3,
+  "DealerId": 3,
+  "id": 6
+}
+[2023-09-12T13:13:55.391Z] Validate user is able to delete products -- Test Passed
+[2023-09-12T13:13:55.458Z] {}

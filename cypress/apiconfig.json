@@ -1,9 +1,7 @@
 {
-    "baseUrl": "https://mobilestore-c8yg.onrender.com",
+    "baseUrl": "https://mobilestoreapi.onrender.com",
     "endpoints": {
       "products": "/products",
-      "login": "/auth/login",
-      "deleteproduct":"/products/{id}",
-      "updateproduct":"/products/{id}"
+      "login": "/auth/login"
     }
   }

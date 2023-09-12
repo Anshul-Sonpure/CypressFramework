@@ -1,6 +1,6 @@
 import '../../support/commands';
 const apiconfig = require('../../apiconfig.json');
-const { login } = require('../../support/loginUtils');
+const { login } = require('../../support/apiUtils');
 const loginuser = require('../../fixtures/loginuser.json');
 
 
@@ -16,9 +16,6 @@ describe('Login to API to get valid access_token', () => {
         const responseBodyString = JSON.stringify(response.body, null, 2);
         cy.logger('apitest', 'Validated login with correct email & password');
         cy.logger('apitest', response.body.access_token);
-        cy.log(responseBodyString);
-
-
       })
   })
   it('login with incorrect email & password', () => {
