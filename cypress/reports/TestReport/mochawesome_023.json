@@ -1,0 +1,258 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-14T15:03:37.774Z",
+    "end": "2023-09-14T15:04:37.426Z",
+    "duration": 59652,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7be7e7a9-5d22-48fe-b3ae-293415174c2f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\uiTest.cy.js",
+      "file": "cypress\\e2e\\uiTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0ebb01d4-8ca3-4f9d-8bbe-08050f8173bf",
+          "title": "Validate User is Register",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify User is able to login",
+              "fullTitle": "Validate User is Register Verify User is able to login",
+              "timedOut": null,
+              "duration": 9101,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('Testdata').then(registerUserdata => {\n  const loginobj = new _Login.default();\n  loginobj.clickLogin();\n  loginobj.setUserName(registerUserdata.UserName);\n  loginobj.setPassword(registerUserdata.UserPassword);\n  cy.logger('application', \"Entered User Details-->Login Test\");\n  loginobj.clickLoginbtn();\n  loginobj.verifyLoginSuccessMsg(registerUserdata.loginmsg);\n  cy.logger('application', \"Validated success Login Msg-->Login Test\");\n  const loadTime = Date.now() - startTime;\n  cy.logger('performance', `TotalTime taken to LoginUser: ${loadTime}ms`);\n});",
+              "err": {},
+              "uuid": "ad85752e-0b4d-40a0-8c13-f9dc7066e296",
+              "parentUUID": "0ebb01d4-8ca3-4f9d-8bbe-08050f8173bf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ad85752e-0b4d-40a0-8c13-f9dc7066e296"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9101,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8fcc7b34-b7ed-4830-bee4-898f09d13895",
+          "title": "Validate User is Register",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify User is able to signup",
+              "fullTitle": "Validate User is Register Verify User is able to signup",
+              "timedOut": null,
+              "duration": 2881,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('Testdata').then(registerUserdata => {\n  const SignUpobj = new _SignUp.default();\n  SignUpobj.clickSignUp();\n  SignUpobj.setUserName(registerUserdata.UserName + Math.floor(Math.random() * 101));\n  SignUpobj.setPassword(registerUserdata.UserPassword);\n  cy.logger('application', 'Entered User details-->SignUp Test');\n  SignUpobj.clickSubmit();\n  SignUpobj.verifySuccessMsg(registerUserdata.expectedsignupMsg);\n  cy.logger('application', 'Verified User SignUp-->SignUp Test');\n  const loadTime = Date.now() - startTime;\n  cy.logger('performance', `TotalTime taken to registerUser: ${loadTime}ms`);\n});",
+              "err": {},
+              "uuid": "5bcd9fb8-5467-40af-af50-bfb7e2b052fc",
+              "parentUUID": "8fcc7b34-b7ed-4830-bee4-898f09d13895",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify User Exist message",
+              "fullTitle": "Validate User is Register Verify User Exist message",
+              "timedOut": null,
+              "duration": 3509,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('Testdata').then(registerUserdata => {\n  const SignUpobj = new _SignUp.default();\n  SignUpobj.clickSignUp();\n  SignUpobj.setUserName(registerUserdata.UserName);\n  SignUpobj.setPassword(registerUserdata.UserPassword);\n  SignUpobj.clickSubmit();\n  SignUpobj.verifyUserexist(registerUserdata.userExistMsg);\n  cy.logger('application', \"Verify User Exist message\");\n});",
+              "err": {},
+              "uuid": "e09ddf36-6e28-4e83-9afb-d5c2597813ad",
+              "parentUUID": "8fcc7b34-b7ed-4830-bee4-898f09d13895",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Invalid Data message",
+              "fullTitle": "Validate User is Register Verify Invalid Data message",
+              "timedOut": null,
+              "duration": 1299,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('Testdata').then(registerUserdata => {\n  const SignUpobj = new _SignUp.default();\n  SignUpobj.clickSignUp();\n  SignUpobj.clickSubmit();\n  SignUpobj.verifyUserexist(registerUserdata.InvalidDataMsg);\n  cy.logger('application', \"Verify Invalid Data message\");\n});",
+              "err": {},
+              "uuid": "b43461fa-dffa-4e45-9442-c91bc6b074b2",
+              "parentUUID": "8fcc7b34-b7ed-4830-bee4-898f09d13895",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5bcd9fb8-5467-40af-af50-bfb7e2b052fc",
+            "e09ddf36-6e28-4e83-9afb-d5c2597813ad",
+            "b43461fa-dffa-4e45-9442-c91bc6b074b2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7689,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "2dbe8279-35c7-463d-b529-75c120915c00",
+          "title": "Validate Data Displayed on MonitorPage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate Price and Monitor Name is correct",
+              "fullTitle": "Validate Data Displayed on MonitorPage Validate Price and Monitor Name is correct",
+              "timedOut": null,
+              "duration": 9055,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('monitor').then(data => {\n  const loginobj = new _Login.default();\n  loginobj.clickLogin();\n  loginobj.setUserName(data.UserName);\n  loginobj.setPassword(data.UserPassword);\n  cy.logger('application', \"Entered User Details-->Login Test\");\n  loginobj.clickLoginbtn();\n  loginobj.verifyLoginSuccessMsg(data.loginmsg);\n  cy.logger('application', \"Validated success Login Msg-->Login Test\");\n  const monitorobj = new _Monitor.default();\n  monitorobj.isMonitorDisplayed();\n  monitorobj.ValidateMonitor1(data.monitor1);\n  monitorobj.Validatemonitor1Price(data.m1Price);\n  monitorobj.ValidateMonitor2(data.monitor2);\n  monitorobj.Validatemonitor2Price(data.m2Price);\n  const loadTime = Date.now() - startTime;\n  cy.logger('performance', `TotalTime taken to ValidateMonitor's: ${loadTime}ms`);\n});",
+              "err": {},
+              "uuid": "667fd5d0-e132-4c70-b277-3d890d69476e",
+              "parentUUID": "2dbe8279-35c7-463d-b529-75c120915c00",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "667fd5d0-e132-4c70-b277-3d890d69476e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9055,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "879ea580-fff6-4c78-ad48-e73a55baa40d",
+          "title": "Validate User is able to make Purchase",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate Add Product",
+              "fullTitle": "Validate User is able to make Purchase Validate Add Product",
+              "timedOut": null,
+              "duration": 26754,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\uiTest.cy.js\\\\Validate User is able to make Purchase -- Validate Add Product.png\",\n      \"\\\\uiTest.cy.js\\\\Validate User is able to make Purchase -- Validate Add Product (1).png\",\n      \"\\\\uiTest.cy.js\\\\OrderPurchased.png\"\n    ]\n  ]\n}",
+              "code": "cy.viewport(1920, 1080);\ncy.fixture('product').then(data => {\n  const loginobj = new _Login.default();\n  loginobj.clickLogin();\n  loginobj.setUserName(data.UserName);\n  loginobj.setPassword(data.UserPassword);\n  cy.logger('application', \"Entered User Details-->Login Test\");\n  loginobj.clickLoginbtn();\n  loginobj.verifyLoginSuccessMsg(data.loginmsg);\n  cy.logger('application', \"Validated success Login Msg-->Login Test\");\n  const prdobj = new _AddProduct.default();\n  prdobj.addProduct();\n  prdobj.enterName(data.name);\n  prdobj.entercountry(data.Country);\n  prdobj.entercity(data.City);\n  prdobj.entercard(data.Creditcard);\n  prdobj.entermonth(data.Month);\n  prdobj.enteryear(data.Year);\n  prdobj.clickPurchase();\n  prdobj.validateOrder();\n  const loadTime = Date.now() - startTime;\n  cy.logger('performance', `TotalTime taken to Purchase Product: ${loadTime}ms`);\n});",
+              "err": {},
+              "uuid": "29c36c6f-a05d-48dc-a68c-0373bc942f3f",
+              "parentUUID": "879ea580-fff6-4c78-ad48-e73a55baa40d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "29c36c6f-a05d-48dc-a68c-0373bc942f3f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26754,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/TestReport",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -13,3 +13,19 @@
 [2023-09-12T17:04:14.928Z] TotalTime taken to registerUser: 11843ms
 [2023-09-12T17:04:29.493Z] TotalTime taken to ValidateMonitor's: 19693ms
 [2023-09-12T17:04:58.757Z] TotalTime taken to Purchase Product: 30097ms
+[2023-09-14T14:45:31.503Z] TotalTime taken to Purchase Product: 3044ms
+[2023-09-14T14:46:07.810Z] TotalTime taken to LoginUser: 2938ms
+[2023-09-14T14:46:40.703Z] TotalTime taken to ValidateMonitor's: 3145ms
+[2023-09-14T14:47:08.585Z] TotalTime taken to registerUser: 2615ms
+[2023-09-14T14:50:42.492Z] TotalTime taken to LoginUser: 2347ms
+[2023-09-14T14:50:46.441Z] TotalTime taken to registerUser: 11761ms
+[2023-09-14T14:51:03.614Z] TotalTime taken to ValidateMonitor's: 20676ms
+[2023-09-14T14:51:31.471Z] TotalTime taken to Purchase Product: 31994ms
+[2023-09-14T14:59:33.850Z] TotalTime taken to Purchase Product: 3925ms
+[2023-09-14T15:00:08.732Z] TotalTime taken to LoginUser: 2534ms
+[2023-09-14T15:00:43.015Z] TotalTime taken to ValidateMonitor's: 2726ms
+[2023-09-14T15:01:08.482Z] TotalTime taken to registerUser: 2483ms
+[2023-09-14T15:03:50.283Z] TotalTime taken to LoginUser: 2682ms
+[2023-09-14T15:03:53.971Z] TotalTime taken to registerUser: 11445ms
+[2023-09-14T15:04:08.432Z] TotalTime taken to ValidateMonitor's: 18994ms
+[2023-09-14T15:04:35.951Z] TotalTime taken to Purchase Product: 29977ms

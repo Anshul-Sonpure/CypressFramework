@@ -1,0 +1,169 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-09-14T15:02:16.528Z",
+    "end": "2023-09-14T15:02:20.977Z",
+    "duration": 4449,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fd8c32b9-a4e2-4be4-af22-8eb4ecb26b98",
+      "title": "",
+      "fullFile": "cypress\\e2e\\apiTest\\getProducts.cy.js",
+      "file": "cypress\\e2e\\apiTest\\getProducts.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5ebd7014-4af0-4e14-bb7d-238a8aee782e",
+          "title": "Get all products",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET Request with Bearer Token",
+              "fullTitle": "Get all products GET Request with Bearer Token",
+              "timedOut": null,
+              "duration": 1251,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\apiTest\\\\getProducts.cy.js\\\\Get all products -- GET Request with Bearer Token (failed).png\"\n    ]\n  ]\n}",
+              "code": "// Call the login function to log in and get the access token\nlogin(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  const accessToken = result.access_token;\n  getproducts(accessToken).then(response => {\n    expect(response.status).to.eq(200); // validate status code as 200 OK\n    const productNames = JSONPath({\n      path: '$..name',\n      json: response.body\n    });\n    // Assertion for products\n    expect(productNames).to.include('Samsung Galaxy A23 Blue', 'Redmi 11 Prime 5G', 'Samsung Galaxy Flip 5G');\n    //logging the reponse in log file;\n    const responseBodyString = JSON.stringify(response.body, null, 2);\n    cy.logger('apitest', \"\\n\" + 'Validated products for getproduct call' + \"\\n\");\n    cy.logger('apitest', 'Response Body:\\n' + responseBodyString);\n  });\n});",
+              "err": {
+                "message": "AssertionError: Redmi 11 Prime 5G: expected [ Array(8) ] to include 'Samsung Galaxy A23 Blue'",
+                "estack": "AssertionError: Redmi 11 Prime 5G: expected [ Array(8) ] to include 'Samsung Galaxy A23 Blue'\n    at Context.eval (webpack://cypressframework/./cypress/e2e/apiTest/getProducts.cy.js:20:34)",
+                "diff": null
+              },
+              "uuid": "685b40d3-1e2a-4391-845e-7628fdc75cad",
+              "parentUUID": "5ebd7014-4af0-4e14-bb7d-238a8aee782e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validation on the request body",
+              "fullTitle": "Get all products Validation on the request body",
+              "timedOut": null,
+              "duration": 1019,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\apiTest\\\\getProducts.cy.js\\\\Get all products -- Validation on the request body (failed).png\"\n    ]\n  ]\n}",
+              "code": "login(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  const accessToken = result.access_token;\n  getproducts(accessToken).then(response => {\n    expect(response.status).to.eq(200); // validate status code as 200 OK\n    const A23Price = JSONPath({\n      path: '$.[0].cost',\n      json: response.body\n    });\n    const M33Name = JSONPath({\n      path: '$.[2].name',\n      json: response.body\n    });\n    // Assertion for products\n    expect(M33Name[0]).to.equal('Samsung Galaxy M33 5G ');\n    expect(A23Price).to.deep.eq([18999]);\n    cy.log(JSON.stringify(response.body, null, 2));\n  });\n});",
+              "err": {
+                "message": "AssertionError: expected [ 13249 ] to deeply equal [ 18999 ]",
+                "estack": "AssertionError: expected [ 13249 ] to deeply equal [ 18999 ]\n    at Context.eval (webpack://cypressframework/./cypress/e2e/apiTest/getProducts.cy.js:43:35)",
+                "diff": "- [ 13249 ]\n+ [ 18999 ]\n"
+              },
+              "uuid": "ece13782-fef2-4295-b4b8-91b4811b78ce",
+              "parentUUID": "5ebd7014-4af0-4e14-bb7d-238a8aee782e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validation for revoked access token",
+              "fullTitle": "Get all products Validation for revoked access token",
+              "timedOut": null,
+              "duration": 617,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const accessToken = `${loginuser.revokedtoken}`;\ngetproducts(accessToken).then(response => {\n  // Assertion for the status code\n  expect(response.status).to.eq(401); // validate status code as 401\n  // Assertion for the error message\n  expect(response.body.message).to.eq('Error access_token is revoked');\n});",
+              "err": {},
+              "uuid": "ce889b5f-aea7-4d61-aff5-71a2c086f554",
+              "parentUUID": "5ebd7014-4af0-4e14-bb7d-238a8aee782e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validation for no Auth Token Send",
+              "fullTitle": "Get all products Validation for no Auth Token Send",
+              "timedOut": null,
+              "duration": 939,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "getproductswithouttoken().then(response => {\n  // Assertion for the status code\n  expect(response.status).to.eq(401); // validate status code as 401\n  // Assertion for the error message\n  expect(response.body.message).to.eq('Error in authorization format');\n});",
+              "err": {},
+              "uuid": "f241f369-34c1-4fff-bb4a-88f502f36492",
+              "parentUUID": "5ebd7014-4af0-4e14-bb7d-238a8aee782e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ce889b5f-aea7-4d61-aff5-71a2c086f554",
+            "f241f369-34c1-4fff-bb4a-88f502f36492"
+          ],
+          "failures": [
+            "685b40d3-1e2a-4391-845e-7628fdc75cad",
+            "ece13782-fef2-4295-b4b8-91b4811b78ce"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3826,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/TestReport",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

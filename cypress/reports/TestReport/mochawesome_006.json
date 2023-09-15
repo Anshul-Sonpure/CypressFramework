@@ -1,0 +1,165 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-09-14T14:49:00.656Z",
+    "end": "2023-09-14T14:49:03.355Z",
+    "duration": 2699,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1ba07bea-7ff1-4c1e-a582-dec1c45715dd",
+      "title": "",
+      "fullFile": "cypress\\e2e\\apiTest\\getProducts.cy.js",
+      "file": "cypress\\e2e\\apiTest\\getProducts.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "74675b93-d382-48f5-a8ab-0a3a0ddb7e2a",
+          "title": "Get all products",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET Request with Bearer Token",
+              "fullTitle": "Get all products GET Request with Bearer Token",
+              "timedOut": null,
+              "duration": 857,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Call the login function to log in and get the access token\nlogin(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  const accessToken = result.access_token;\n  getproducts(accessToken).then(response => {\n    expect(response.status).to.eq(200); // validate status code as 200 OK\n    const productNames = JSONPath({\n      path: '$..name',\n      json: response.body\n    });\n    // Assertion for products\n    expect(productNames).to.include('Samsung Galaxy A23 Blue', 'Redmi 11 Prime 5G', 'Samsung Galaxy Flip 5G');\n    //logging the reponse in log file;\n    const responseBodyString = JSON.stringify(response.body, null, 2);\n    cy.logger('apitest', \"\\n\" + 'Validated products for getproduct call' + \"\\n\");\n    cy.logger('apitest', 'Response Body:\\n' + responseBodyString);\n  });\n});",
+              "err": {},
+              "uuid": "25e2cb43-b495-4d53-ac8c-cc80db764a17",
+              "parentUUID": "74675b93-d382-48f5-a8ab-0a3a0ddb7e2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validation on the request body",
+              "fullTitle": "Get all products Validation on the request body",
+              "timedOut": null,
+              "duration": 885,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\apiTest\\\\getProducts.cy.js\\\\Get all products -- Validation on the request body (failed).png\"\n    ]\n  ]\n}",
+              "code": "login(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  const accessToken = result.access_token;\n  getproducts(accessToken).then(response => {\n    expect(response.status).to.eq(200); // validate status code as 200 OK\n    const A23Price = JSONPath({\n      path: '$.[0].cost',\n      json: response.body\n    });\n    const M33Name = JSONPath({\n      path: '$.[2].name',\n      json: response.body\n    });\n    // Assertion for products\n    expect(M33Name[0]).to.equal('Samsung Galaxy M33 5G ');\n    expect(A23Price).to.deep.eq([18999]);\n    cy.log(JSON.stringify(response.body, null, 2));\n  });\n});",
+              "err": {
+                "message": "AssertionError: expected 'OnePlus Nord CE 3 Lite 5G' to equal 'Samsung Galaxy M33 5G '",
+                "estack": "AssertionError: expected 'OnePlus Nord CE 3 Lite 5G' to equal 'Samsung Galaxy M33 5G '\n    at Context.eval (webpack://cypressframework/./cypress/e2e/apiTest/getProducts.cy.js:42:32)",
+                "diff": "- 'OnePlus Nord CE 3 Lite 5G'\n+ 'Samsung Galaxy M33 5G '\n"
+              },
+              "uuid": "98972ab9-bce3-4e14-b226-f37d0354e72b",
+              "parentUUID": "74675b93-d382-48f5-a8ab-0a3a0ddb7e2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validation for revoked access token",
+              "fullTitle": "Get all products Validation for revoked access token",
+              "timedOut": null,
+              "duration": 227,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const accessToken = `${loginuser.revokedtoken}`;\ngetproducts(accessToken).then(response => {\n  // Assertion for the status code\n  expect(response.status).to.eq(401); // validate status code as 401\n  // Assertion for the error message\n  expect(response.body.message).to.eq('Error access_token is revoked');\n});",
+              "err": {},
+              "uuid": "a160d6b3-0cf6-4b96-b5d0-114f3a1c43fe",
+              "parentUUID": "74675b93-d382-48f5-a8ab-0a3a0ddb7e2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validation for no Auth Token Send",
+              "fullTitle": "Get all products Validation for no Auth Token Send",
+              "timedOut": null,
+              "duration": 220,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "getproductswithouttoken().then(response => {\n  // Assertion for the status code\n  expect(response.status).to.eq(401); // validate status code as 401\n  // Assertion for the error message\n  expect(response.body.message).to.eq('Error in authorization format');\n});",
+              "err": {},
+              "uuid": "4f18c61e-1efc-4c81-aec8-e00c6102e6e3",
+              "parentUUID": "74675b93-d382-48f5-a8ab-0a3a0ddb7e2a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "25e2cb43-b495-4d53-ac8c-cc80db764a17",
+            "a160d6b3-0cf6-4b96-b5d0-114f3a1c43fe",
+            "4f18c61e-1efc-4c81-aec8-e00c6102e6e3"
+          ],
+          "failures": [
+            "98972ab9-bce3-4e14-b226-f37d0354e72b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2189,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/TestReport",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -855,3 +855,273 @@ Validated products for getproduct call
   "locationId": 3,
   "DealerId": 2
 }
+[2023-09-14T14:48:22.303Z] 
+Validated products for getproduct call
+
+[2023-09-14T14:48:22.399Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Samsung Galaxy S23 Blue",
+    "cost": 120000,
+    "quantity": 100,
+    "locationId": 3,
+    "DealerId": 1,
+    "id": 6
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": "67000",
+    "locationId": "2",
+    "dealerId": "1",
+    "quantity": "100",
+    "id": 8
+  }
+]
+[2023-09-14T14:48:25.569Z] Validate user is able to create new products -- Test Passed
+[2023-09-14T14:48:25.645Z] {
+  "name": "Intelligent Bronze Tuna",
+  "cost": 48072,
+  "quantity": 379,
+  "locationId": 1,
+  "DealerId": 2,
+  "id": 9
+}
+[2023-09-14T14:48:33.570Z] Validate user is able to delete products -- Test Passed
+[2023-09-14T14:48:33.910Z] {}
+[2023-09-14T14:49:01.441Z] 
+Validated products for getproduct call
+
+[2023-09-14T14:49:01.465Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 18999,
+    "quantity": 100,
+    "locationId": 1,
+    "DealerId": 1
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": "67000",
+    "locationId": "2",
+    "dealerId": "1",
+    "quantity": "100",
+    "id": 8
+  },
+  {
+    "name": "Intelligent Bronze Tuna",
+    "cost": 48072,
+    "quantity": 379,
+    "locationId": 1,
+    "DealerId": 2,
+    "id": 9
+  }
+]
+[2023-09-14T14:49:12.279Z] Validated login with correct email & password
+[2023-09-14T14:49:12.315Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ3MDI5NTMsImV4cCI6MTY5NDcwNjU1M30.-sSq_tTMxdixx55NcsvqTiRupyrQ68qoc8ERvnQzILU
+[2023-09-14T14:49:29.825Z] Validate user is able to create new products -- Test Passed
+[2023-09-14T14:49:29.875Z] {
+  "name": "Electronic Rubber Chips",
+  "cost": 64143,
+  "quantity": 498,
+  "locationId": 2,
+  "DealerId": 1,
+  "id": 10
+}
+[2023-09-14T14:49:48.866Z] Validate user is able to update existing products -- Test Passed
+[2023-09-14T14:49:48.908Z] {
+  "id": 1,
+  "name": "Samsung Galaxy A23 Blue",
+  "cost": 68944,
+  "quantity": 182,
+  "locationId": 5,
+  "DealerId": 3
+}
+[2023-09-14T14:50:15.089Z] Validate user is able to create new products -- Test Passed
+[2023-09-14T14:50:15.137Z] {
+  "name": "Apple iphone 12pro ",
+  "cost": 15593,
+  "locationId": 3,
+  "dealerId": "1",
+  "quantity": 444,
+  "id": 8,
+  "DealerId": 5
+}
+[2023-09-14T15:01:36.643Z] Validated login with correct email & password
+[2023-09-14T15:01:36.683Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ3MDM2OTgsImV4cCI6MTY5NDcwNzI5OH0.TylCc5rnntsZOgBcek4qvGxTplTRBV9DeBgGVrqDwX8
+[2023-09-14T15:01:37.694Z] 
+Validated products for getproduct call
+
+[2023-09-14T15:01:37.744Z] Response Body:
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy A23 Blue",
+    "cost": 68944,
+    "quantity": 182,
+    "locationId": 5,
+    "DealerId": 3
+  },
+  {
+    "id": 2,
+    "name": "Redmi 11 Prime 5G",
+    "cost": 13249,
+    "quantity": 2000,
+    "locationId": 2,
+    "DealerId": 2
+  },
+  {
+    "id": 3,
+    "name": "OnePlus Nord CE 3 Lite 5G",
+    "cost": 19999,
+    "quantity": 3000,
+    "locationId": 3,
+    "DealerId": 3
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy M33 5G ",
+    "cost": 17999,
+    "quantity": 4000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Flip 5G ",
+    "cost": 70000,
+    "quantity": 1000,
+    "locationId": 2,
+    "DealerId": 3
+  },
+  {
+    "name": "Apple iphone 12pro ",
+    "cost": 15593,
+    "locationId": 3,
+    "dealerId": "1",
+    "quantity": 444,
+    "id": 8,
+    "DealerId": 5
+  },
+  {
+    "name": "Intelligent Bronze Tuna",
+    "cost": 48072,
+    "quantity": 379,
+    "locationId": 1,
+    "DealerId": 2,
+    "id": 9
+  },
+  {
+    "name": "Electronic Rubber Chips",
+    "cost": 64143,
+    "quantity": 498,
+    "locationId": 2,
+    "DealerId": 1,
+    "id": 10
+  }
+]
+[2023-09-14T15:01:40.277Z] Validate user is able to create new products -- Test Passed
+[2023-09-14T15:01:40.364Z] {
+  "name": "Bespoke Concrete Tuna",
+  "cost": 37642,
+  "quantity": 401,
+  "locationId": 2,
+  "DealerId": 5,
+  "id": 11
+}
+[2023-09-14T15:02:29.654Z] Validated login with correct email & password
+[2023-09-14T15:02:29.709Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ3MDM3NTEsImV4cCI6MTY5NDcwNzM1MX0.9A_tUuUjchHTF_LmqmnBCtO36Ds-eooU4rJDmPm640A
+[2023-09-14T15:02:46.272Z] Validate user is able to create new products -- Test Passed
+[2023-09-14T15:02:46.306Z] {
+  "name": "Recycled Soft Pizza",
+  "cost": 16489,
+  "quantity": 256,
+  "locationId": 1,
+  "DealerId": 1,
+  "id": 12
+}
+[2023-09-14T15:03:25.463Z] Validate user is able to create new products -- Test Passed
+[2023-09-14T15:03:25.529Z] {
+  "name": "Apple iphone 12pro ",
+  "cost": 35554,
+  "locationId": 3,
+  "dealerId": "1",
+  "quantity": 366,
+  "id": 8,
+  "DealerId": 3
+}
+[2023-09-14T15:13:11.846Z] Validated login with correct email & password
+[2023-09-14T15:13:11.888Z] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJydW5vQGVtYWlsLmNvbSIsInBhc3N3b3JkIjoiYnJ1bm8iLCJpYXQiOjE2OTQ3MDQzOTMsImV4cCI6MTY5NDcwNzk5M30.5S3JZXCYMohvsELZVeHMzsc8XvVQiRM7ZMTnFn1Z1Ik

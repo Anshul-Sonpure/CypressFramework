@@ -1,0 +1,391 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 11,
+    "passes": 7,
+    "pending": 0,
+    "failures": 4,
+    "start": "2023-09-14T15:01:35.393Z",
+    "end": "2023-09-14T15:01:48.854Z",
+    "duration": 13461,
+    "testsRegistered": 11,
+    "passPercent": 63.63636363636363,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "24311aee-d4ed-40d1-99ca-9a56cd6dd272",
+      "title": "",
+      "fullFile": "cypress\\e2e\\apiTest.cy.js",
+      "file": "cypress\\e2e\\apiTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "52937238-12d5-429b-84ce-3c3c04bae018",
+          "title": "Login to API to get valid access_token",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login with correct email & password",
+              "fullTitle": "Login to API to get valid access_token login with correct email & password",
+              "timedOut": null,
+              "duration": 1333,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  // Receive the object containing response and access_token\n  const response = result.response; // Access the entire response object\n  // Assert that the response status code is 200\n  expect(response.status).to.eq(200);\n  // Assert that the response body contains the 'access_token' property\n  expect(response.body).to.have.property('access_token').that.is.not.empty;\n  const responseBodyString = JSON.stringify(response.body, null, 2);\n  cy.logger('apitest', 'Validated login with correct email & password');\n  cy.logger('apitest', response.body.access_token);\n});",
+              "err": {},
+              "uuid": "7e5ee2b6-13b9-4833-884b-cc1f5c1b75d5",
+              "parentUUID": "52937238-12d5-429b-84ce-3c3c04bae018",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login with incorrect email & password",
+              "fullTitle": "Login to API to get valid access_token login with incorrect email & password",
+              "timedOut": null,
+              "duration": 231,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login(`${loginuser.incorrectemail}`, `${loginuser.password}`).then(result => {\n  // Receive the object containing response and access_token\n  const response = result.response; // Access the entire response object\n  // Assert that the response status code is 200\n  expect(response.status).to.eq(401);\n  // Assert that the response body contains the 'access_token' property\n  expect(response.body.message).to.eq('Incorrect email or password');\n});",
+              "err": {},
+              "uuid": "4a4f93be-648a-43a1-9b3e-c24167986178",
+              "parentUUID": "52937238-12d5-429b-84ce-3c3c04bae018",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7e5ee2b6-13b9-4833-884b-cc1f5c1b75d5",
+            "4a4f93be-648a-43a1-9b3e-c24167986178"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1564,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8745b93c-213d-4a78-b12f-1212914b76c6",
+          "title": "Get all products",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET Request with Bearer Token",
+              "fullTitle": "Get all products GET Request with Bearer Token",
+              "timedOut": null,
+              "duration": 586,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Call the login function to log in and get the access token\nlogin(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  const accessToken = result.access_token;\n  getproducts(accessToken).then(response => {\n    expect(response.status).to.eq(200); // validate status code as 200 OK\n    const productNames = JSONPath({\n      path: '$..name',\n      json: response.body\n    });\n    // Assertion for products\n    expect(productNames).to.include('Samsung Galaxy A23 Blue', 'Redmi 11 Prime 5G', 'Samsung Galaxy Flip 5G');\n    //logging the reponse in log file;\n    const responseBodyString = JSON.stringify(response.body, null, 2);\n    cy.logger('apitest', \"\\n\" + 'Validated products for getproduct call' + \"\\n\");\n    cy.logger('apitest', 'Response Body:\\n' + responseBodyString);\n  });\n});",
+              "err": {},
+              "uuid": "8f443dcd-765f-45e4-830c-655248989b39",
+              "parentUUID": "8745b93c-213d-4a78-b12f-1212914b76c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validation on the request body",
+              "fullTitle": "Get all products Validation on the request body",
+              "timedOut": null,
+              "duration": 896,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\apiTest.cy.js\\\\Get all products -- Validation on the request body (failed).png\"\n    ]\n  ]\n}",
+              "code": "login(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  const accessToken = result.access_token;\n  getproducts(accessToken).then(response => {\n    expect(response.status).to.eq(200); // validate status code as 200 OK\n    const A23Price = JSONPath({\n      path: '$.[0].cost',\n      json: response.body\n    });\n    const M33Name = JSONPath({\n      path: '$.[2].name',\n      json: response.body\n    });\n    // Assertion for products\n    expect(M33Name[0]).to.equal('Samsung Galaxy M33 5G ');\n    expect(A23Price).to.deep.eq([18999]);\n    cy.log(JSON.stringify(response.body, null, 2));\n  });\n});",
+              "err": {
+                "message": "AssertionError: expected 'OnePlus Nord CE 3 Lite 5G' to equal 'Samsung Galaxy M33 5G '",
+                "estack": "AssertionError: expected 'OnePlus Nord CE 3 Lite 5G' to equal 'Samsung Galaxy M33 5G '\n    at Context.eval (webpack://cypressframework/./cypress/e2e/apiTest/getProducts.cy.js:42:32)",
+                "diff": "- 'OnePlus Nord CE 3 Lite 5G'\n+ 'Samsung Galaxy M33 5G '\n"
+              },
+              "uuid": "6385822a-60fe-4a97-a636-4d0f2e0e8177",
+              "parentUUID": "8745b93c-213d-4a78-b12f-1212914b76c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validation for revoked access token",
+              "fullTitle": "Get all products Validation for revoked access token",
+              "timedOut": null,
+              "duration": 240,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const accessToken = `${loginuser.revokedtoken}`;\ngetproducts(accessToken).then(response => {\n  // Assertion for the status code\n  expect(response.status).to.eq(401); // validate status code as 401\n  // Assertion for the error message\n  expect(response.body.message).to.eq('Error access_token is revoked');\n});",
+              "err": {},
+              "uuid": "95c144d5-f250-4db7-a7c5-07dfb041abf4",
+              "parentUUID": "8745b93c-213d-4a78-b12f-1212914b76c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validation for no Auth Token Send",
+              "fullTitle": "Get all products Validation for no Auth Token Send",
+              "timedOut": null,
+              "duration": 236,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "getproductswithouttoken().then(response => {\n  // Assertion for the status code\n  expect(response.status).to.eq(401); // validate status code as 401\n  // Assertion for the error message\n  expect(response.body.message).to.eq('Error in authorization format');\n});",
+              "err": {},
+              "uuid": "843be3c9-93b1-4090-96df-28572393a94e",
+              "parentUUID": "8745b93c-213d-4a78-b12f-1212914b76c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8f443dcd-765f-45e4-830c-655248989b39",
+            "95c144d5-f250-4db7-a7c5-07dfb041abf4",
+            "843be3c9-93b1-4090-96df-28572393a94e"
+          ],
+          "failures": [
+            "6385822a-60fe-4a97-a636-4d0f2e0e8177"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1958,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3b800ffe-5c21-47e7-85cf-e1b52bd157e6",
+          "title": "Create new products",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate user is able to create new products",
+              "fullTitle": "Create new products Validate user is able to create new products",
+              "timedOut": null,
+              "duration": 638,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  const accessToken = result.access_token; // Access the access_token\n  createProduct(payload, accessToken).then(response => {\n    expect(response.status).to.eq(201);\n    expect(response.body.name).to.eq(payload.name);\n    cy.logger('apitest', 'Validate user is able to create new products -- Test Passed');\n    cy.logger('apitest', JSON.stringify(response.body, null, 2));\n  });\n});",
+              "err": {},
+              "uuid": "21493b09-211c-4359-9b4d-a11aa547b012",
+              "parentUUID": "3b800ffe-5c21-47e7-85cf-e1b52bd157e6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "21493b09-211c-4359-9b4d-a11aa547b012"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 638,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "990e4c46-d233-4a3e-bc55-9a20968c24ff",
+          "title": "Update Products",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate user is able to update existing products",
+              "fullTitle": "Update Products Validate user is able to update existing products",
+              "timedOut": null,
+              "duration": 727,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\apiTest.cy.js\\\\Update Products -- Validate user is able to update existing products (failed).png\"\n    ]\n  ]\n}",
+              "code": "login(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  const accessToken = result.access_token; // Access the access_token\n  updateProduct(payload, accessToken, productId).then(response => {\n    expect(response.status).to.eq(200);\n    expect(response.body.quantity).to.eq(payload.quantity);\n    cy.logger('apitest', 'Validate user is able to update existing products -- Test Passed');\n    cy.logger('apitest', JSON.stringify(response.body, null, 2));\n  });\n});",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'access_token')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'access_token')\n    at Context.eval (webpack://cypressframework/./cypress/support/apiUtils.js:16:40)",
+                "diff": null
+              },
+              "uuid": "acfb193c-d82c-4f03-9637-4dc681ad786f",
+              "parentUUID": "990e4c46-d233-4a3e-bc55-9a20968c24ff",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate if no auth token send",
+              "fullTitle": "Update Products Validate if no auth token send",
+              "timedOut": null,
+              "duration": 3229,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\apiTest.cy.js\\\\Update Products -- Validate if no auth token send (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.wait(2500);\nupdateProductwithoutToken(payload, productId).then(response => {\n  // Assertion for the status code\n  expect(response.status).to.eq(401); // validate status code as 401\n  // Assertion for the error message\n  expect(response.body.message).to.eq('Error in authorization format');\n});",
+              "err": {
+                "message": "AssertionError: expected 502 to equal 401",
+                "estack": "AssertionError: expected 502 to equal 401\n    at Context.eval (webpack://cypressframework/./cypress/e2e/apiTest/updateProduct.cy.js:34:39)",
+                "diff": "- 502\n+ 401\n"
+              },
+              "uuid": "4c59ac56-c73a-424c-861b-9ba2ba224572",
+              "parentUUID": "990e4c46-d233-4a3e-bc55-9a20968c24ff",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate if Token is revoked",
+              "fullTitle": "Update Products Validate if Token is revoked",
+              "timedOut": null,
+              "duration": 2956,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(2500);\nconst accessToken = `${loginuser.revokedtoken}`;\nupdateProduct(payload, accessToken, productId).then(response => {\n  // Assertion for the status code\n  expect(response.status).to.eq(401); // validate status code as 401\n  // Assertion for the error message\n  expect(response.body.message).to.eq('Error access_token is revoked');\n});",
+              "err": {},
+              "uuid": "8371ae45-0543-4e04-8d00-3d9915f0fa78",
+              "parentUUID": "990e4c46-d233-4a3e-bc55-9a20968c24ff",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8371ae45-0543-4e04-8d00-3d9915f0fa78"
+          ],
+          "failures": [
+            "acfb193c-d82c-4f03-9637-4dc681ad786f",
+            "4c59ac56-c73a-424c-861b-9ba2ba224572"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6912,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d1d4b445-a971-429e-9ae1-d022e38dc422",
+          "title": "Delete Product",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate user is able to delete existing products",
+              "fullTitle": "Delete Product Validate user is able to delete existing products",
+              "timedOut": null,
+              "duration": 988,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\apiTest.cy.js\\\\Delete Product -- Validate user is able to delete existing products (failed).png\"\n    ]\n  ]\n}",
+              "code": "login(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  const accessToken = result.access_token; // Access the access_token\n  deleteProduct(accessToken, productId).then(response => {\n    expect(response.status).to.eq(200);\n    cy.logger('apitest', 'Validate user is able to delete products -- Test Passed');\n    cy.logger('apitest', JSON.stringify(response.body, null, 2));\n  });\n});",
+              "err": {
+                "message": "AssertionError: expected 404 to equal 200",
+                "estack": "AssertionError: expected 404 to equal 200\n    at Context.eval (webpack://cypressframework/./cypress/e2e/apiTest/deleteProducts.cy.js:16:47)",
+                "diff": "- 404\n+ 200\n"
+              },
+              "uuid": "603a64aa-9bcb-4bae-ad03-bb799800422a",
+              "parentUUID": "d1d4b445-a971-429e-9ae1-d022e38dc422",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "603a64aa-9bcb-4bae-ad03-bb799800422a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 988,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/TestReport",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-09-14T14:48:52.183Z",
+    "end": "2023-09-14T14:48:53.472Z",
+    "duration": 1289,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ad814937-84b2-4d5e-891a-6bfc690cf567",
+      "title": "",
+      "fullFile": "cypress\\e2e\\apiTest\\deleteProducts.cy.js",
+      "file": "cypress\\e2e\\apiTest\\deleteProducts.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "545a08ba-818d-4b20-a39a-ffa265d3db1f",
+          "title": "Delete Product",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate user is able to delete existing products",
+              "fullTitle": "Delete Product Validate user is able to delete existing products",
+              "timedOut": null,
+              "duration": 1160,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\apiTest\\\\deleteProducts.cy.js\\\\Delete Product -- Validate user is able to delete existing products (failed).png\"\n    ]\n  ]\n}",
+              "code": "login(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  const accessToken = result.access_token; // Access the access_token\n  deleteProduct(accessToken, productId).then(response => {\n    expect(response.status).to.eq(200);\n    cy.logger('apitest', 'Validate user is able to delete products -- Test Passed');\n    cy.logger('apitest', JSON.stringify(response.body, null, 2));\n  });\n});",
+              "err": {
+                "message": "AssertionError: expected 404 to equal 200",
+                "estack": "AssertionError: expected 404 to equal 200\n    at Context.eval (webpack://cypressframework/./cypress/e2e/apiTest/deleteProducts.cy.js:16:47)",
+                "diff": "- 404\n+ 200\n"
+              },
+              "uuid": "9f68c03f-940d-4475-96be-c7d326450576",
+              "parentUUID": "545a08ba-818d-4b20-a39a-ffa265d3db1f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "9f68c03f-940d-4475-96be-c7d326450576"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1160,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/TestReport",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

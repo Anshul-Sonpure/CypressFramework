@@ -1,0 +1,103 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-09-14T15:02:45.621Z",
+    "end": "2023-09-14T15:02:46.470Z",
+    "duration": 849,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8259172f-df2b-4ebf-bb58-201ab9dfaa18",
+      "title": "",
+      "fullFile": "cypress\\e2e\\apiTest\\postProduct.cy.js",
+      "file": "cypress\\e2e\\apiTest\\postProduct.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "30672211-1a43-47a3-a524-56b25a0e643f",
+          "title": "Create new products",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate user is able to create new products",
+              "fullTitle": "Create new products Validate user is able to create new products",
+              "timedOut": null,
+              "duration": 720,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  const accessToken = result.access_token; // Access the access_token\n  createProduct(payload, accessToken).then(response => {\n    expect(response.status).to.eq(201);\n    expect(response.body.name).to.eq(payload.name);\n    cy.logger('apitest', 'Validate user is able to create new products -- Test Passed');\n    cy.logger('apitest', JSON.stringify(response.body, null, 2));\n  });\n});",
+              "err": {},
+              "uuid": "f774013e-57b5-458c-9ffb-b72d912acd5c",
+              "parentUUID": "30672211-1a43-47a3-a524-56b25a0e643f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f774013e-57b5-458c-9ffb-b72d912acd5c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 720,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/TestReport",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-09-14T15:03:01.217Z",
+    "end": "2023-09-14T15:03:09.293Z",
+    "duration": 8076,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c5e33ba-4dac-4f14-8e39-3ec0413780d1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\apiTest\\updateProduct.cy.js",
+      "file": "cypress\\e2e\\apiTest\\updateProduct.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9a23c42e-d383-41de-9dbd-fb3d9a76c506",
+          "title": "Update Products",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate user is able to update existing products",
+              "fullTitle": "Update Products Validate user is able to update existing products",
+              "timedOut": null,
+              "duration": 1605,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\apiTest\\\\updateProduct.cy.js\\\\Update Products -- Validate user is able to update existing products (failed).png\"\n    ]\n  ]\n}",
+              "code": "login(`${loginuser.email}`, `${loginuser.password}`).then(result => {\n  const accessToken = result.access_token; // Access the access_token\n  updateProduct(payload, accessToken, productId).then(response => {\n    expect(response.status).to.eq(200);\n    expect(response.body.quantity).to.eq(payload.quantity);\n    cy.logger('apitest', 'Validate user is able to update existing products -- Test Passed');\n    cy.logger('apitest', JSON.stringify(response.body, null, 2));\n  });\n});",
+              "err": {
+                "message": "AssertionError: expected 404 to equal 200",
+                "estack": "AssertionError: expected 404 to equal 200\n    at Context.eval (webpack://cypressframework/./cypress/e2e/apiTest/updateProduct.cy.js:22:47)",
+                "diff": "- 404\n+ 200\n"
+              },
+              "uuid": "c27196be-5a9d-4802-8ba2-bf2b8f4972e5",
+              "parentUUID": "9a23c42e-d383-41de-9dbd-fb3d9a76c506",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate if no auth token send",
+              "fullTitle": "Update Products Validate if no auth token send",
+              "timedOut": null,
+              "duration": 3276,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(2500);\nupdateProductwithoutToken(payload, productId).then(response => {\n  // Assertion for the status code\n  expect(response.status).to.eq(401); // validate status code as 401\n  // Assertion for the error message\n  expect(response.body.message).to.eq('Error in authorization format');\n});",
+              "err": {},
+              "uuid": "eac6aa8e-166f-49cb-9e7c-b1075ebbf23c",
+              "parentUUID": "9a23c42e-d383-41de-9dbd-fb3d9a76c506",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate if Token is revoked",
+              "fullTitle": "Update Products Validate if Token is revoked",
+              "timedOut": null,
+              "duration": 2741,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.wait(2500);\nconst accessToken = `${loginuser.revokedtoken}`;\nupdateProduct(payload, accessToken, productId).then(response => {\n  // Assertion for the status code\n  expect(response.status).to.eq(401); // validate status code as 401\n  // Assertion for the error message\n  expect(response.body.message).to.eq('Error access_token is revoked');\n});",
+              "err": {},
+              "uuid": "5f6e07c2-05a3-4797-bee9-04fa9d1a00ca",
+              "parentUUID": "9a23c42e-d383-41de-9dbd-fb3d9a76c506",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eac6aa8e-166f-49cb-9e7c-b1075ebbf23c",
+            "5f6e07c2-05a3-4797-bee9-04fa9d1a00ca"
+          ],
+          "failures": [
+            "c27196be-5a9d-4802-8ba2-bf2b8f4972e5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7622,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/TestReport",
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}
