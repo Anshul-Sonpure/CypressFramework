@@ -1,8 +1,8 @@
 const { defineConfig } = require('cypress');
-//For connecting to SQL Server
 const mysql = require('mysql')
 const reportDir = process.env.REPORT_DIR || 'cypress/reports';
 const reportName = process.env.REPORT_NAME || 'TestReport';
+
 
 module.exports = defineConfig({
   projectId: "kveppv",
@@ -14,6 +14,10 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
+      on('task',
+        {
+          queryDb: query => { return queryTestDb(query, config) },
+        });
     },
   },
   "env": {
@@ -24,18 +28,7 @@ module.exports = defineConfig({
       "database": "mymobilestore"
     }
   }
-});
-module.exports = (on, config) => {
-  // Usage: cy.task('queryDb', query)
-  on("task", {
-    queryDb: query => {
-      return queryTestDb(query, config);
-    }
-  });
-};
-
-
-
+})
 
 function queryTestDb(query, config) {
   // creates a new mysql connection using credentials from cypress.json env's
@@ -44,12 +37,12 @@ function queryTestDb(query, config) {
   connection.connect()
   // exec query + disconnect to db as a Promise
   return new Promise((resolve, reject) => {
-    connection.query(query, (error, results) => {
-      if (error) reject(error)
-      else {
-        connection.end()
-        return resolve(results)
-      }
-    })
+      connection.query(query, (error, results) => {
+          if (error) reject(error)
+          else {
+              connection.end()
+              return resolve(results)
+          }
+      })
   })
 }
