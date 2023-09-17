@@ -8,7 +8,7 @@
     "uitest": "cross-env REPORT_NAME=UIReport cypress run --spec 'cypress/e2e/uiTest.cy.js'",
     "apitest": "cross-env REPORT_NAME=APIReport cypress run --spec 'cypress/e2e/apiTest.cy.js'",
     "cypress-dashboard": "npx cypress run --record --key 414d3363-6fe8-49db-ad55-3fcd3081d458",
-    "dbtest" :"jest"
+    "dbtest" :"cypress run --spec 'cypress/e2e/databaseTest.cy.js'"
   },
   "author": "Anshul",
   "license": "ISC",
